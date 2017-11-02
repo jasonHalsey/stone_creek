@@ -1,0 +1,40 @@
+header{
+	.x-container.max{
+		max-width: 100%;
+	}
+	.x-container{
+		img{
+			max-width: 357px;
+		}
+	}
+	.x-brand{
+		margin-top: 13px;
+	}
+}
+
+#cta_row{
+	max-width: 100%;
+	min-width: 100%;
+	width:100%;
+	.x-column{
+		margin-right:0;
+	}
+	.x-1-4{
+		width:25%;
+	}
+	.x-image{
+		width:100%;
+		height:auto;
+		img{
+			width:100%;
+		}
+	}
+}
+#cta_row > div{
+	width:100%!important;
+	max-width: 100%!important;
+	.x-container.max {
+	    max-width: 100%;
+	}
+
+}

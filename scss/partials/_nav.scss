@@ -1,0 +1,21 @@
+.x-navbar-wrap{
+	.x-navbar, .x-navbar .sub-menu {
+	    background-color: $white !important;
+	}
+}
+
+.desktop .x-nav > li {
+	position: relative;
+}
+.desktop .x-nav > li:after { 
+	content:"";
+	display:block;
+	width:1px;
+	position: absolute;
+	right:0;
+	background-color:#ccc;
+	top: 35%; bottom: 35%;
+}
+.desktop .x-nav > li:last-child:after {
+	display: none;
+}
