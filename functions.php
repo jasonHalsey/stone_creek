@@ -26,3 +26,13 @@ add_filter( 'x_enqueue_parent_stylesheet', '__return_true' );
 /*  Remove Admin Bar
 /* ------------------------------------ */ 
 add_filter('show_admin_bar', '__return_false');
+
+
+function wpb_adding_scripts() {
+
+	wp_register_script('stone', get_stylesheet_directory_uri() . '/js/stone_creek_js.js');
+
+	wp_enqueue_script('stone');
+
+}
+add_action( 'wp_footer', 'wpb_adding_scripts' ); 

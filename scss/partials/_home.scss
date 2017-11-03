@@ -16,6 +16,19 @@ header{
 	max-width: 100%;
 	min-width: 100%;
 	width:100%;
+	position: fixed;
+	bottom:0;
+	background-color: $black;
+	a{
+		img{
+			opacity:0.2;
+		}
+		&:hover{
+			img{
+				opacity:1;
+			}
+		}
+	}
 	.x-column{
 		margin-right:0;
 	}
@@ -37,4 +50,17 @@ header{
 	    max-width: 100%;
 	}
 
+}
+
+//CTAs
+span.img-caption{
+	position: absolute;
+    left: 8%;
+    right: 8%;
+    text-align: center;
+    top: 34%;
+    color: #fff;
+    font-size: 3.5em;
+    font-family: "Playfair";
+    padding: 0em;
 }
