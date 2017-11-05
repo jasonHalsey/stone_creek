@@ -299,6 +299,146 @@ hr {
   margin: 1.5em 0;
 }
 
+/* line 1, scss/partials/_footer.scss */
+footer .x-container.max {
+  max-width: 1950px;
+}
+
+/* line 5, scss/partials/_footer.scss */
+.x-colophon .widget ul li {
+  background-color: transparent;
+  float: left;
+  margin-right: 1.5em;
+  padding-right: 1.5em;
+}
+/* line 11, scss/partials/_footer.scss */
+.x-colophon .widget_nav_menu ul > li {
+  border-top: none;
+}
+/* line 13, scss/partials/_footer.scss */
+.x-colophon .widget_nav_menu ul > li a {
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+/* line 19, scss/partials/_footer.scss */
+.x-colophon .x-1-4:first-child {
+  width: 100%;
+}
+/* line 22, scss/partials/_footer.scss */
+.x-colophon .x-column.last, .x-colophon .x-column:last-of-type {
+  margin-right: 0;
+  float: right;
+  background-color: #cbc7c7;
+  padding: 3.0em;
+}
+/* line 29, scss/partials/_footer.scss */
+.x-colophon div.x-column.x-md.x-1-4:nth-child(2) {
+  position: relative;
+  height: 100%;
+}
+/* line 32, scss/partials/_footer.scss */
+.x-colophon div.x-column.x-md.x-1-4:nth-child(2) .widget_custom_html {
+  position: absolute;
+  bottom: 1%;
+}
+/* line 37, scss/partials/_footer.scss */
+.x-colophon div.x-column.x-md.x-1-4:nth-child(3) {
+  position: relative;
+  height: 100%;
+}
+/* line 40, scss/partials/_footer.scss */
+.x-colophon div.x-column.x-md.x-1-4:nth-child(3) .widget_custom_html {
+  position: absolute;
+  bottom: 1%;
+}
+/* line 45, scss/partials/_footer.scss */
+.x-colophon .widget_nav_menu ul {
+  border-bottom: none;
+}
+
+/* line 49, scss/partials/_footer.scss */
+.x-colophon.top {
+  padding: 2% 0 2.25%;
+  background-color: #808083;
+}
+
+/* line 54, scss/partials/_footer.scss */
+.x-colophon .widget_nav_menu ul > li {
+  position: relative;
+}
+
+/* line 57, scss/partials/_footer.scss */
+.x-colophon .widget_nav_menu ul > li:after {
+  content: "";
+  display: block;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  background-color: #ccc;
+  top: 35%;
+  bottom: 35%;
+}
+
+/* line 66, scss/partials/_footer.scss */
+.x-colophon .widget_nav_menu ul > li:last-child:after {
+  display: none;
+}
+
+/* line 69, scss/partials/_footer.scss */
+.widget_nav_menu .current-menu-item > a:after {
+  display: none;
+}
+
+/* line 72, scss/partials/_footer.scss */
+section.footer_contact {
+  color: #ffffff;
+  font-size: 1.15em;
+  padding-right: 1.0em;
+}
+/* line 20, scss/bourbon/bourbon/library/_clearfix.scss */
+section.footer_contact::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 77, scss/partials/_footer.scss */
+section.footer_contact .top_slice {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+/* line 82, scss/partials/_footer.scss */
+section.footer_contact .contact_img {
+  display: block;
+  width: 26%;
+  float: left;
+}
+/* line 87, scss/partials/_footer.scss */
+section.footer_contact .contact_info {
+  display: block;
+  width: 72%;
+  float: left;
+}
+/* line 91, scss/partials/_footer.scss */
+section.footer_contact .contact_info ul {
+  list-style-type: none;
+}
+/* line 93, scss/partials/_footer.scss */
+section.footer_contact .contact_info ul li {
+  width: 100%;
+  line-height: 1.65;
+}
+/* line 96, scss/partials/_footer.scss */
+section.footer_contact .contact_info ul li img {
+  width: 80%;
+  height: auto;
+}
+/* line 101, scss/partials/_footer.scss */
+section.footer_contact .contact_info ul li.bottom_space {
+  margin-bottom: 0.5em;
+}
+
 /* line 2, scss/partials/_nav.scss */
 .x-navbar-wrap .x-navbar, .x-navbar-wrap .x-navbar .sub-menu {
   background-color: #ffffff !important;

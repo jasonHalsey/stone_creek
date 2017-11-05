@@ -1,0 +1,106 @@
+footer .x-container.max {
+    max-width: 1950px;
+}
+.x-colophon {
+	.widget ul li {
+	    background-color: transparent;
+	    float: left;
+	    margin-right: 1.5em;
+	    padding-right: 1.5em;
+	}
+	.widget_nav_menu ul>li{
+		border-top:none;
+		a{
+			color:$white;
+			font-family: 'Lato', sans-serif;
+			font-size: 1.5em;
+		}
+	}
+	.x-1-4:first-child{
+		width:100%;
+	}
+	.x-column.last, .x-column:last-of-type {
+	    margin-right: 0;
+	    float:right;
+	    background-color: $lt_gray;
+	    padding:3.0em;
+	}
+
+	div.x-column.x-md.x-1-4:nth-child(2){
+		position: relative;
+		height:100%;
+		.widget_custom_html{
+			position: absolute;
+			bottom:1%;
+		}
+	}
+	div.x-column.x-md.x-1-4:nth-child(3){
+		position: relative;
+		height:100%;
+		.widget_custom_html{
+			position: absolute;
+			bottom:1%;
+		}
+	}
+	.widget_nav_menu ul{
+		border-bottom: none;
+	}
+}
+.x-colophon.top {
+    padding: 2% 0 2.25%;
+    background-color: $gray;
+}
+
+.x-colophon .widget_nav_menu ul > li{
+	position: relative;
+}
+.x-colophon .widget_nav_menu ul > li:after{ 
+	content:"";
+	display:block;
+	width:1px;
+	position: absolute;
+	right:0;
+	background-color:#ccc;
+	top: 35%; bottom: 35%;
+}
+.x-colophon .widget_nav_menu ul > li:last-child:after {
+	display: none;
+}
+.widget_nav_menu .current-menu-item>a:after{
+	display:none;
+}
+section.footer_contact{
+	color:$white;
+	font-size: 1.15em;
+	@include clearfix;
+	padding-right:1.0em;
+	.top_slice{
+		display:block;
+		width:100%;
+		margin-bottom: 1.5em;
+	}
+	.contact_img{
+		display:block;
+		width:26%;
+		float:left;
+	}
+	.contact_info{
+		display:block;
+		width:72%;
+		float:left;
+		ul{
+			list-style-type: none;
+			li{
+				width:100%;
+				line-height:1.65;
+				img{
+					width: 80%;
+				    height: auto;
+				}
+			}
+			li.bottom_space{
+				margin-bottom: 0.5em;
+			}
+		}
+	}
+}

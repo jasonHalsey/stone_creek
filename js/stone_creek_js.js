@@ -1,5 +1,6 @@
 jQuery(document).ready(function() {
 	cta_text();	
+	footer_col_height();
 });
 
 
@@ -22,4 +23,15 @@ function cta_text() {
 		    }).insertAfter(this);
 		}
 	});
+}
+
+function footer_col_height() {
+	var last_col_height = jQuery('div.x-column.x-md.x-1-4.last').height();
+	var new_col_height = (last_col_height + 83);
+	jQuery('div.x-column.x-md.x-1-4:nth-child(2)').css({
+		"height": new_col_height + "px"
+	});jQuery('div.x-column.x-md.x-1-4:nth-child(3)').css({
+		"height": new_col_height + "px"
+	});
+	console.log(new_col_height);
 }
