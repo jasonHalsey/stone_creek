@@ -2,20 +2,16 @@ jQuery(document).ready(function() {
 	cta_text();	
 });
 
-jQuery(window).resize(function(){
-	cta_text_recenter();
-});
-
 
 function cta_text() {
 	jQuery("#cta_row img").each(function() {
 		var imageCaption = jQuery(this).attr("alt");
 		if (imageCaption != '') {
-		    var imgWidth = jQuery(this).width();
-		    var imgHeight = jQuery(this).height();
-		    var halfheight = (imgHeight / 2);
-		    var position = jQuery(this).position();
-		    var positionTop = (position.top + halfheight);
+		    // var imgWidth = jQuery(this).width();
+		    // var imgHeight = jQuery(this).height();
+		    // var halfheight = (imgHeight / 2);
+		    // var position = jQuery(this).position();
+		    // var positionTop = (position.top + halfheight);
 		    jQuery("<span class='img-caption'>" + imageCaption + "</span>").css({
 		        // "position": "absolute",
 		        // "top": positionTop + "px",
@@ -26,8 +22,4 @@ function cta_text() {
 		    }).insertAfter(this);
 		}
 	});
-}
-
-function cta_text_recenter() {
-
 }

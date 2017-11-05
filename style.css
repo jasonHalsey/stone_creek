@@ -9,6 +9,7 @@ Version: 1.0.0
 Template: x
 
 */
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 /* line 4, scss/base/_buttons.scss */
 button, [type='button'], [type='reset'], [type='submit'] {
   appearance: none;
@@ -333,65 +334,138 @@ header .x-container.max {
 header .x-container img {
   max-width: 357px;
 }
-/* line 10, scss/partials/_home.scss */
+@media all and (max-width: 400px) {
+  /* line 6, scss/partials/_home.scss */
+  header .x-container img {
+    max-width: 320px;
+  }
+}
+/* line 14, scss/partials/_home.scss */
 header .x-brand {
   margin-top: 13px;
 }
+/* line 17, scss/partials/_home.scss */
+header .x-btn-navbar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-/* line 15, scss/partials/_home.scss */
+/* line 23, scss/partials/_home.scss */
 #cta_row {
   max-width: 100%;
   min-width: 100%;
   width: 100%;
+  height: auto;
   position: fixed;
   bottom: 0;
   background-color: #3C3b3b;
 }
-/* line 23, scss/partials/_home.scss */
-#cta_row a img {
-  opacity: 0.2;
+@media all and (max-width: 980px) {
+  /* line 23, scss/partials/_home.scss */
+  #cta_row {
+    position: relative;
+  }
 }
-/* line 27, scss/partials/_home.scss */
-#cta_row a:hover img {
-  opacity: 1;
-}
-/* line 32, scss/partials/_home.scss */
+/* line 34, scss/partials/_home.scss */
 #cta_row .x-column {
   margin-right: 0;
 }
-/* line 35, scss/partials/_home.scss */
+/* line 38, scss/partials/_home.scss */
 #cta_row .x-1-4 {
   width: 25%;
+  height: auto;
 }
-/* line 38, scss/partials/_home.scss */
+@media all and (max-width: 980px) {
+  /* line 38, scss/partials/_home.scss */
+  #cta_row .x-1-4 {
+    width: 100%;
+    max-height: 100px;
+  }
+}
+/* line 47, scss/partials/_home.scss */
 #cta_row .x-image {
   width: 100%;
   height: auto;
 }
-/* line 41, scss/partials/_home.scss */
+/* line 50, scss/partials/_home.scss */
 #cta_row .x-image img {
   width: 100%;
+  height: auto;
+}
+@media all and (max-width: 980px) {
+  /* line 50, scss/partials/_home.scss */
+  #cta_row .x-image img {
+    width: 100%;
+  }
+}
+@media all and (max-width: 980px) {
+  /* line 47, scss/partials/_home.scss */
+  #cta_row .x-image {
+    width: 100%;
+    max-height: 100px;
+    overflow: hidden;
+  }
+}
+/* line 63, scss/partials/_home.scss */
+#cta_row .tint {
+  position: relative;
+  float: left;
+  cursor: pointer;
+}
+/* line 69, scss/partials/_home.scss */
+#cta_row .tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(98, 70, 34, 0.7);
+  -moz-transition: background .3s linear;
+  -webkit-transition: background .3s linear;
+  -o-transition: background .3s linear;
+  transition: background .3s linear;
+}
+/* line 84, scss/partials/_home.scss */
+#cta_row .tint:hover:before {
+  background: none;
 }
 
-/* line 46, scss/partials/_home.scss */
+/* line 89, scss/partials/_home.scss */
 #cta_row > div {
   width: 100% !important;
   max-width: 100% !important;
 }
-/* line 49, scss/partials/_home.scss */
+/* line 92, scss/partials/_home.scss */
 #cta_row > div .x-container.max {
   max-width: 100%;
 }
 
-/* line 56, scss/partials/_home.scss */
+/* line 99, scss/partials/_home.scss */
 span.img-caption {
   position: absolute;
-  left: 8%;
-  right: 8%;
+  z-index: 777;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: center;
-  top: 34%;
   color: #fff;
-  font-size: 3.5em;
-  font-family: "Playfair";
-  padding: 0em;
+  font-size: 3.25em;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+  padding: 0 1.0em;
+}
+@media all and (max-width: 1200px) {
+  /* line 99, scss/partials/_home.scss */
+  span.img-caption {
+    font-size: 2.95em;
+    padding: 0 0.5em;
+  }
+}
+@media all and (max-width: 980px) {
+  /* line 99, scss/partials/_home.scss */
+  span.img-caption {
+    font-size: 2.0em;
+  }
 }

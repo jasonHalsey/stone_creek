@@ -10,11 +10,13 @@ Template: x
 
 */
 
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "base/base";
 
+@import "partials/mixins";
 @import "partials/variables";
 // @import "partials/fonts";
 @import "partials/nav";
