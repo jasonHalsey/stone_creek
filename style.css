@@ -786,10 +786,18 @@ span.img-caption {
   position: relative;
 }
 /* line 81, scss/partials/_recreation.scss */
+.vt_cta .x-container.width {
+  width: 100%;
+}
+/* line 84, scss/partials/_recreation.scss */
 .vt_cta .el91.x-column {
   padding: 0;
 }
-/* line 84, scss/partials/_recreation.scss */
+/* line 87, scss/partials/_recreation.scss */
+.vt_cta .x-2-3 {
+  margin-right: 0;
+}
+/* line 90, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 {
   position: absolute;
   top: 50%;
@@ -797,12 +805,30 @@ span.img-caption {
   width: 100%;
   text-align: center;
 }
-/* line 91, scss/partials/_recreation.scss */
+/* line 96, scss/partials/_recreation.scss */
+.vt_cta .vt_col_1 h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4.15em;
+  color: #4d4d4f;
+}
+/* line 101, scss/partials/_recreation.scss */
+.vt_cta .vt_col_1 a {
+  display: block;
+  background-color: #849b61;
+  border: 1px solid #000;
+  padding: 0.5em;
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  width: 160px;
+  margin: 0 auto;
+}
+/* line 114, scss/partials/_recreation.scss */
 .vt_cta .cta_vt {
   text-align: center;
   display: block;
 }
-/* line 95, scss/partials/_recreation.scss */
+/* line 118, scss/partials/_recreation.scss */
 .vt_cta .x-image img {
   width: 100%;
 }

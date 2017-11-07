@@ -78,8 +78,14 @@
 .vt_cta{
 	background-color: $tan!important;
 	position:relative;
+	.x-container.width{
+		width:100%;
+	}
 	.el91.x-column{
 		padding:0;
+	}
+	.x-2-3{
+		margin-right: 0;
 	}
 	.vt_col_1{
 	  position: absolute;
@@ -87,6 +93,23 @@
 	  transform: translateY(-50%);
 	  width:100%;
 	  text-align: center;
+	  h2{
+	  	font-family: 'Playfair Display', serif;
+    	font-size: 4.15em;
+    	color: $md_gray;
+	  }
+	  a{
+	  	display: block;
+	  	background-color: $btn_grn;
+	  	border: 1px solid $true_blk;
+	  	padding:0.5em;
+	  	color:$white;
+	  	font-family: 'Playfair Display', serif;
+	  	font-size: 18px;	
+	  	width:160px;
+	  	margin: 0 auto;
+
+	  }
 	}
 	.cta_vt{
 		text-align: center;
