@@ -1,6 +1,12 @@
 jQuery(document).ready(function() {
 	cta_text();	
 	footer_col_height();
+	wrap_cta() ;
+	cta_height();
+});
+
+jQuery( window ).resize(function() {
+	cta_height();
 });
 
 
@@ -33,5 +39,15 @@ function footer_col_height() {
 	});jQuery('div.x-column.x-md.x-1-4:nth-child(3)').css({
 		"height": new_col_height + "px"
 	});
-	console.log(new_col_height);
+}
+
+function wrap_cta() {
+	jQuery(".vt_col_1" ).wrapAll( "<div class='cta_vt' />");
+}
+
+function cta_height() {
+	var vt_img_height = jQuery('#cs-content > div.el89.x-section.vt_cta > div > div.el93.x-column.x-sm.x-1-3 > span > img').height();
+	jQuery(".cta_vt").css({
+		"height": vt_img_height + "px"
+	});
 }

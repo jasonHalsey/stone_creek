@@ -14,3 +14,14 @@
     bottom: 0;
   }
 }
+
+@mixin img_half() {
+  margin: 0px;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    img{
+      visibility: hiddem;
+      opacity: 0;
+    }
+}

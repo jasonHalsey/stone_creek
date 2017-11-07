@@ -1,0 +1,98 @@
+.rec_intro{
+	background-color: $tan!important;
+	.sc_top_row{
+		max-width: 1400px!important;
+		margin: 0 auto!important;
+	}
+}
+.r_50_text{
+	max-width: 970px;
+    display: block;
+    float: right;
+    margin:3.0em 6.0em;
+    p{
+    	font-family: 'Lato', sans-serif;
+    	font-size: 1.6em;
+    	line-height:2.0;
+    	color: $true_blk;
+    }
+    h2{
+    	font-family: 'Playfair Display', serif;
+    	font-size: 3.15em;
+    	color: $title_grn;
+    }
+}
+.l_50_text{
+	max-width: 970px;
+    display: block;
+    float: left;
+    margin:3.0em 6.0em;
+    p{
+    	font-family: 'Lato', sans-serif;
+    	font-size: 1.6em;
+    	line-height:2.0;
+    	color: $true_blk;
+    }
+    h2{
+    	font-family: 'Playfair Display', serif;
+    	font-size: 3.15em;
+    	color: $title_grn;
+    }
+}
+
+.old_mill_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/old_mill_50.jpg');
+}
+
+.downtown_50{
+	@include img_half;
+    background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/downtown_50.jpg');
+}
+
+.mountainbike_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/mountainbiking_50.jpg');
+}
+
+.hiking_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/smith_rock_50.jpg');
+}
+
+.skiing_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/slkiing_50.jpg');
+}
+
+.fishing_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/fly_fishing_50.jpg');
+}
+
+.golfing_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/golfing_50.jpg');
+}
+
+.vt_cta{
+	background-color: $tan!important;
+	position:relative;
+	.el91.x-column{
+		padding:0;
+	}
+	.vt_col_1{
+	  position: absolute;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  width:100%;
+	  text-align: center;
+	}
+	.cta_vt{
+		text-align: center;
+		display:block;
+	}
+	.x-image img{		
+		width:100%;
+	}
+}

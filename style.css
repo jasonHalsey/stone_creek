@@ -299,6 +299,26 @@ hr {
   margin: 1.5em 0;
 }
 
+/* line 1, scss/partials/_global.scss */
+.x-container.offset {
+  margin: 0px auto !important;
+}
+
+/* line 4, scss/partials/_global.scss */
+.x-section {
+  padding: 0 0 45px 0;
+}
+
+/* line 7, scss/partials/_global.scss */
+.el1.x-section {
+  padding: 0 !important;
+}
+
+/* line 11, scss/partials/_global.scss */
+.sc_top_row {
+  background-color: #e9e6d7;
+}
+
 /* line 1, scss/partials/_footer.scss */
 footer .x-container.max {
   max-width: 1950px;
@@ -608,4 +628,181 @@ span.img-caption {
   span.img-caption {
     font-size: 2.0em;
   }
+}
+
+/* line 1, scss/partials/_recreation.scss */
+.rec_intro {
+  background-color: #e9e6d7 !important;
+}
+/* line 3, scss/partials/_recreation.scss */
+.rec_intro .sc_top_row {
+  max-width: 1400px !important;
+  margin: 0 auto !important;
+}
+
+/* line 8, scss/partials/_recreation.scss */
+.r_50_text {
+  max-width: 970px;
+  display: block;
+  float: right;
+  margin: 3.0em 6.0em;
+}
+/* line 13, scss/partials/_recreation.scss */
+.r_50_text p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6em;
+  line-height: 2.0;
+  color: #000;
+}
+/* line 19, scss/partials/_recreation.scss */
+.r_50_text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.15em;
+  color: #658239;
+}
+
+/* line 25, scss/partials/_recreation.scss */
+.l_50_text {
+  max-width: 970px;
+  display: block;
+  float: left;
+  margin: 3.0em 6.0em;
+}
+/* line 30, scss/partials/_recreation.scss */
+.l_50_text p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6em;
+  line-height: 2.0;
+  color: #000;
+}
+/* line 36, scss/partials/_recreation.scss */
+.l_50_text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.15em;
+  color: #658239;
+}
+
+/* line 43, scss/partials/_recreation.scss */
+.old_mill_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/old_mill_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.old_mill_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
+/* line 48, scss/partials/_recreation.scss */
+.downtown_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/downtown_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.downtown_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
+/* line 53, scss/partials/_recreation.scss */
+.mountainbike_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/mountainbiking_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.mountainbike_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
+/* line 58, scss/partials/_recreation.scss */
+.hiking_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/smith_rock_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.hiking_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
+/* line 63, scss/partials/_recreation.scss */
+.skiing_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/slkiing_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.skiing_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
+/* line 68, scss/partials/_recreation.scss */
+.fishing_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/fly_fishing_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.fishing_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
+/* line 73, scss/partials/_recreation.scss */
+.golfing_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/golfing_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.golfing_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
+/* line 78, scss/partials/_recreation.scss */
+.vt_cta {
+  background-color: #e9e6d7 !important;
+  position: relative;
+}
+/* line 81, scss/partials/_recreation.scss */
+.vt_cta .el91.x-column {
+  padding: 0;
+}
+/* line 84, scss/partials/_recreation.scss */
+.vt_cta .vt_col_1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+/* line 91, scss/partials/_recreation.scss */
+.vt_cta .cta_vt {
+  text-align: center;
+  display: block;
+}
+/* line 95, scss/partials/_recreation.scss */
+.vt_cta .x-image img {
+  width: 100%;
 }
