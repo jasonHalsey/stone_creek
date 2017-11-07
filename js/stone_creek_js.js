@@ -1,8 +1,7 @@
 jQuery(document).ready(function() {
 	cta_text();	
 	footer_col_height();
-	wrap_cta() ;
-	cta_height();
+	wrap_cta() ;	
 });
 
 jQuery( window ).resize(function() {
@@ -42,18 +41,14 @@ function footer_col_height() {
 }
 
 function wrap_cta() {
-	// jQuery(".vt_col_1" ).wrapAll( "<div class='cta_vt' />");
 	jQuery(".vt_col_1").each(function() {
 		jQuery(this).wrapAll( "<div class='cta_vt' />");
 	});
+	cta_height();
 }
 
 function cta_height() {
-	// var vt_img_height = jQuery('#cs-content > div.el99.x-section.vt_cta > div > div.el103.x-column.x-sm.x-1-3 > span > img').height();
-	
 	jQuery(".cta_vt").each(function() {
-		// var vt_img = jQuery(this).nextAll('img.vt_image');
-		// var vt_img = jQuery(this).parent().next(".vt_image");
 		var vt_img = jQuery(".vt_image");
 		var vt_img_height = (vt_img).height();
 		console.log(vt_img_height);

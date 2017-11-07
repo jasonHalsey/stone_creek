@@ -6,38 +6,10 @@
 	}
 }
 .r_50_text{
-	max-width: 970px;
-    display: block;
-    float: right;
-    margin:3.0em 6.0em;
-    p{
-    	font-family: 'Lato', sans-serif;
-    	font-size: 1.6em;
-    	line-height:2.0;
-    	color: $true_blk;
-    }
-    h2{
-    	font-family: 'Playfair Display', serif;
-    	font-size: 3.15em;
-    	color: $title_grn;
-    }
+	@include r_50_text_mix;
 }
 .l_50_text{
-	max-width: 970px;
-    display: block;
-    float: left;
-    margin:3.0em 6.0em;
-    p{
-    	font-family: 'Lato', sans-serif;
-    	font-size: 1.6em;
-    	line-height:2.0;
-    	color: $true_blk;
-    }
-    h2{
-    	font-family: 'Playfair Display', serif;
-    	font-size: 3.15em;
-    	color: $title_grn;
-    }
+	@include l_50_text_mix;
 }
 
 .old_mill_50{
@@ -81,11 +53,12 @@
 	.x-container.width{
 		width:100%;
 	}
-	.el91.x-column{
-		padding:0;
+	.x-column{
+		padding:0!important;
 	}
 	.x-2-3{
 		margin-right: 0;
+		padding:0!important;
 	}
 	.vt_col_1{
 	  position: absolute;
@@ -108,7 +81,13 @@
 	  	font-size: 18px;	
 	  	width:160px;
 	  	margin: 0 auto;
-
+	  	-moz-transition: background-color .3s linear;
+	    -webkit-transition: background-color .3s linear;
+	    -o-transition: background-color .3s linear;
+	    transition: background-color .3s linear;
+	  	&:hover{
+	  		background-color: $title_grn;
+	  	}
 	  }
 	}
 	.cta_vt{

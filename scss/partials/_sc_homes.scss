@@ -1,0 +1,79 @@
+.x-img{
+	margin-bottom: 0!important;
+}
+.onyx_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/onyx.jpg');
+}
+.sapphire_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/sapphire.jpg');
+}
+
+.ruby_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/ruby.jpg');
+}
+
+.garnet_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/gernet.jpg');
+}
+
+.emerald_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/emerald.jpg');
+}
+
+.r_50_text_sm{
+	@include r_50_text_mix;
+	max-width: 768px;
+}
+.l_50_text_sm{
+	@include l_50_text_mix;
+	max-width: 768px;
+}
+a.available{
+	color:$true_blk;
+	display: block;
+	font-size:26px;
+	font-family: 'Playfair Display', serif;
+	cursor: pointer;
+	-moz-transition: color .3s linear;
+    -webkit-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+	&:hover{
+		color:$btn_grn;
+	}
+	&:before {
+	  content: "";
+	  float: left;
+	  width: 30px;
+	  height: 32px;
+	  margin: 8px 18px 0 0;
+	  background: url(images/person2_icon.png);
+	}
+}
+a.more{
+	color:$true_blk;
+	display: block;
+	font-size:26px;
+	font-family: 'Playfair Display', serif;
+	cursor: pointer;
+	-moz-transition: color .3s linear;
+    -webkit-transition: color .3s linear;
+    -o-transition: color .3s linear;
+    transition: color .3s linear;
+	&:hover{
+		color:$btn_grn;
+	}
+	&:before {
+	  content: "";
+	  float: left;
+	  width: 30px;
+	  height: 26px;
+	  margin: 8px 18px 0 0;
+	  background: url(images/housing_icon.png);
+	}
+}
