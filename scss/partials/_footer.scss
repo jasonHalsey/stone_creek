@@ -88,6 +88,9 @@ section.footer_contact{
 		display:block;
 		width:72%;
 		float:left;
+		a{
+			color:$white;
+		}
 		ul{
 			list-style-type: none;
 			li{
@@ -97,6 +100,7 @@ section.footer_contact{
 					width: 80%;
 				    height: auto;
 				}
+
 			}
 			li.bottom_space{
 				margin-bottom: 0.5em;

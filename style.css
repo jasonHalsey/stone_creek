@@ -319,6 +319,22 @@ hr {
   background-color: #e9e6d7;
 }
 
+@media (max-width: 1000px) {
+  /* line 16, scss/partials/_global.scss */
+  .x-column.x-sm {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 1000px) {
+  /* line 24, scss/partials/_global.scss */
+  .x-section .x-container.marginless-columns .x-column[class*="x-"] {
+    display: block;
+    width: 100%;
+    vertical-align: inherit;
+  }
+}
 /* line 1, scss/partials/_footer.scss */
 footer .x-container.max {
   max-width: 1950px;
@@ -441,20 +457,24 @@ section.footer_contact .contact_info {
   float: left;
 }
 /* line 91, scss/partials/_footer.scss */
+section.footer_contact .contact_info a {
+  color: #ffffff;
+}
+/* line 94, scss/partials/_footer.scss */
 section.footer_contact .contact_info ul {
   list-style-type: none;
 }
-/* line 93, scss/partials/_footer.scss */
+/* line 96, scss/partials/_footer.scss */
 section.footer_contact .contact_info ul li {
   width: 100%;
   line-height: 1.65;
 }
-/* line 96, scss/partials/_footer.scss */
+/* line 99, scss/partials/_footer.scss */
 section.footer_contact .contact_info ul li img {
   width: 80%;
   height: auto;
 }
-/* line 101, scss/partials/_footer.scss */
+/* line 105, scss/partials/_footer.scss */
 section.footer_contact .contact_info ul li.bottom_space {
   margin-bottom: 0.5em;
 }
@@ -546,14 +566,16 @@ header .x-btn-navbar {
 #cta_row .x-image {
   width: 100%;
   height: auto;
+  display: block;
 }
-/* line 50, scss/partials/_home.scss */
+/* line 51, scss/partials/_home.scss */
 #cta_row .x-image img {
   width: 100%;
   height: auto;
+  display: block;
 }
 @media all and (max-width: 980px) {
-  /* line 50, scss/partials/_home.scss */
+  /* line 51, scss/partials/_home.scss */
   #cta_row .x-image img {
     width: 100%;
   }
@@ -566,13 +588,14 @@ header .x-btn-navbar {
     overflow: hidden;
   }
 }
-/* line 63, scss/partials/_home.scss */
+/* line 65, scss/partials/_home.scss */
 #cta_row .tint {
   position: relative;
   float: left;
   cursor: pointer;
+  display: block;
 }
-/* line 69, scss/partials/_home.scss */
+/* line 72, scss/partials/_home.scss */
 #cta_row .tint:before {
   content: "";
   display: block;
@@ -587,22 +610,23 @@ header .x-btn-navbar {
   -o-transition: background .3s linear;
   transition: background .3s linear;
 }
-/* line 84, scss/partials/_home.scss */
+/* line 87, scss/partials/_home.scss */
 #cta_row .tint:hover:before {
   background: none;
+  display: block;
 }
 
-/* line 89, scss/partials/_home.scss */
+/* line 93, scss/partials/_home.scss */
 #cta_row > div {
   width: 100% !important;
   max-width: 100% !important;
 }
-/* line 92, scss/partials/_home.scss */
+/* line 96, scss/partials/_home.scss */
 #cta_row > div .x-container.max {
   max-width: 100%;
 }
 
-/* line 99, scss/partials/_home.scss */
+/* line 103, scss/partials/_home.scss */
 span.img-caption {
   position: absolute;
   z-index: 777;
@@ -617,17 +641,96 @@ span.img-caption {
   padding: 0 1.0em;
 }
 @media all and (max-width: 1200px) {
-  /* line 99, scss/partials/_home.scss */
+  /* line 103, scss/partials/_home.scss */
   span.img-caption {
     font-size: 2.95em;
     padding: 0 0.5em;
   }
 }
 @media all and (max-width: 980px) {
-  /* line 99, scss/partials/_home.scss */
+  /* line 103, scss/partials/_home.scss */
   span.img-caption {
     font-size: 2.0em;
   }
+}
+
+/* line 126, scss/partials/_home.scss */
+div.el1.x-section.email_box {
+  position: absolute;
+  z-index: 9999 !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  padding: 2em 1em !important;
+  left: 6%;
+  top: 10%;
+  border: 1px solid #3C3b3b;
+  max-width: 380px;
+}
+/* line 135, scss/partials/_home.scss */
+div.el1.x-section.email_box h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.0em;
+}
+
+/* line 140, scss/partials/_home.scss */
+div.el1.x-section.head_email_form {
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  position: absolute;
+  width: 100%;
+  display: block;
+  z-index: 9999 !important;
+  padding-top: 1.2em !important;
+}
+/* line 147, scss/partials/_home.scss */
+div.el1.x-section.head_email_form h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  padding-top: 1.0em;
+  width: 30%;
+  float: left;
+  font-weight: 400;
+}
+
+/* line 157, scss/partials/_home.scss */
+.head_form {
+  width: 50%;
+  float: right;
+}
+/* line 20, scss/bourbon/bourbon/library/_clearfix.scss */
+.head_form .tco-section::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 164, scss/partials/_home.scss */
+.head_form .tco-subscribe-form {
+  position: relative;
+  float: right;
+}
+/* line 168, scss/partials/_home.scss */
+.head_form .tco-subscribe-form fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  float: left;
+}
+/* line 174, scss/partials/_home.scss */
+.head_form .tco-subscribe-form label {
+  margin: 0 0 0.375em;
+  font-size: 0.65em;
+  line-height: 1;
+}
+/* line 179, scss/partials/_home.scss */
+.head_form .tco-subscribe-form input[type="submit"] {
+  display: inline-block;
+  width: 100%;
+  margin-top: 0.9em;
+  font-size: inherit;
+  margin-left: 1.0em;
+}
+/* line 186, scss/partials/_home.scss */
+.head_form .tco-subscribe-form .tco-subscribe-form-alert-wrap {
+  margin-top: 4.25em;
+  font-size: inherit;
 }
 
 /* line 1, scss/partials/_recreation.scss */
@@ -807,20 +910,20 @@ span.img-caption {
   background-color: #e9e6d7 !important;
   position: relative;
 }
-/* line 53, scss/partials/_recreation.scss */
+/* line 54, scss/partials/_recreation.scss */
 .vt_cta .x-container.width {
   width: 100%;
 }
-/* line 56, scss/partials/_recreation.scss */
+/* line 57, scss/partials/_recreation.scss */
 .vt_cta .x-column {
   padding: 0 !important;
 }
-/* line 59, scss/partials/_recreation.scss */
+/* line 60, scss/partials/_recreation.scss */
 .vt_cta .x-2-3 {
   margin-right: 0;
   padding: 0 !important;
 }
-/* line 63, scss/partials/_recreation.scss */
+/* line 64, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 {
   position: absolute;
   top: 50%;
@@ -828,13 +931,13 @@ span.img-caption {
   width: 100%;
   text-align: center;
 }
-/* line 69, scss/partials/_recreation.scss */
+/* line 70, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 h2 {
   font-family: 'Playfair Display', serif;
   font-size: 4.15em;
   color: #4d4d4f;
 }
-/* line 74, scss/partials/_recreation.scss */
+/* line 75, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 a {
   display: block;
   background-color: #849b61;
@@ -850,16 +953,17 @@ span.img-caption {
   -o-transition: background-color .3s linear;
   transition: background-color .3s linear;
 }
-/* line 88, scss/partials/_recreation.scss */
+/* line 89, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 a:hover {
   background-color: #658239;
 }
-/* line 93, scss/partials/_recreation.scss */
+/* line 94, scss/partials/_recreation.scss */
 .vt_cta .cta_vt {
   text-align: center;
   display: block;
+  min-height: 200px;
 }
-/* line 97, scss/partials/_recreation.scss */
+/* line 99, scss/partials/_recreation.scss */
 .vt_cta .x-image img {
   width: 100%;
 }
@@ -1055,4 +1159,214 @@ a.more:before {
   height: 26px;
   margin: 8px 18px 0 0;
   background: url(images/housing_icon.png);
+}
+
+/* line 1, scss/partials/_living.scss */
+.working_row {
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/working_bg.jpg");
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  max-height: 800px;
+  min-height: 400px;
+  height: 100%;
+}
+/* line 10, scss/partials/_living.scss */
+.working_row .l_50_text {
+  max-width: 970px;
+  display: block;
+  float: left;
+  margin: 3.0em 6.0em;
+  max-width: 800px;
+  margin: 5em 8em 10em 11em !important;
+}
+/* line 63, scss/partials/_mixins.scss */
+.working_row .l_50_text p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6em;
+  line-height: 2.0;
+  color: #000;
+}
+/* line 69, scss/partials/_mixins.scss */
+.working_row .l_50_text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.15em;
+  color: #658239;
+}
+/* line 75, scss/partials/_mixins.scss */
+.working_row .l_50_text ul li {
+  font-size: 1.6em;
+  font-family: 'Lato', sans-serif;
+  color: #000;
+  margin-bottom: 0.75em;
+}
+/* line 80, scss/partials/_mixins.scss */
+.working_row .l_50_text ul li:last-child {
+  font-weight: 600;
+}
+/* line 14, scss/partials/_living.scss */
+.working_row .l_50_text p {
+  color: #ffffff !important;
+}
+/* line 17, scss/partials/_living.scss */
+.working_row .l_50_text h2 {
+  color: #ffffff !important;
+}
+
+/* line 22, scss/partials/_living.scss */
+.schools_row {
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/schools.jpg");
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  max-height: 800px;
+  min-height: 400px;
+  height: 100%;
+}
+/* line 31, scss/partials/_living.scss */
+.schools_row .l_50_text {
+  max-width: 970px;
+  display: block;
+  float: left;
+  margin: 3.0em 6.0em;
+  max-width: 800px;
+  margin: 5em 8em 10em 11em !important;
+}
+/* line 63, scss/partials/_mixins.scss */
+.schools_row .l_50_text p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6em;
+  line-height: 2.0;
+  color: #000;
+}
+/* line 69, scss/partials/_mixins.scss */
+.schools_row .l_50_text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.15em;
+  color: #658239;
+}
+/* line 75, scss/partials/_mixins.scss */
+.schools_row .l_50_text ul li {
+  font-size: 1.6em;
+  font-family: 'Lato', sans-serif;
+  color: #000;
+  margin-bottom: 0.75em;
+}
+/* line 80, scss/partials/_mixins.scss */
+.schools_row .l_50_text ul li:last-child {
+  font-weight: 600;
+}
+/* line 35, scss/partials/_living.scss */
+.schools_row .l_50_text p {
+  color: #ffffff !important;
+}
+/* line 38, scss/partials/_living.scss */
+.schools_row .l_50_text h2 {
+  color: #ffffff !important;
+}
+
+/* line 44, scss/partials/_living.scss */
+.shopping_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/shopping.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.shopping_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
+/* line 2, scss/partials/_old_farm.scss */
+.history_row {
+  max-width: 1400px !important;
+  margin: 0 auto;
+  padding: 4.0em 0.25em;
+}
+/* line 6, scss/partials/_old_farm.scss */
+.history_row p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.6em;
+  line-height: 1.75;
+  color: #000;
+}
+/* line 12, scss/partials/_old_farm.scss */
+.history_row h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.15em;
+  color: #658239;
+}
+
+/* line 1, scss/partials/_bend.scss */
+.fall_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/fall_fest_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.fall_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
+/* line 5, scss/partials/_bend.scss */
+.winter_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/winter_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.winter_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
+/* line 9, scss/partials/_bend.scss */
+.summer_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/summer_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.summer_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
+/* line 13, scss/partials/_bend.scss */
+.drake_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/drake_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.drake_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
+/* line 17, scss/partials/_bend.scss */
+.foodcart_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/foodcart_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.foodcart_50 img {
+  visibility: hiddem;
+  opacity: 0;
 }

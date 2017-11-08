@@ -1,0 +1,20 @@
+.fall_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/fall_fest_50.jpg');
+}
+.winter_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/winter_50.jpg');
+}
+.summer_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/summer_50.jpg');
+}
+.drake_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/drake_50.jpg');
+}
+.foodcart_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/foodcart_50.jpg');
+}

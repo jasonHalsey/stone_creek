@@ -1,30 +1,20 @@
 jQuery(document).ready(function() {
 	cta_text();	
 	footer_col_height();
-	wrap_cta() ;	
 });
 
 jQuery( window ).resize(function() {
 	cta_height();
 });
 
-
+jQuery( window ).load(function() {
+  wrap_cta() ;
+});
 function cta_text() {
 	jQuery("#cta_row img").each(function() {
 		var imageCaption = jQuery(this).attr("alt");
 		if (imageCaption != '') {
-		    // var imgWidth = jQuery(this).width();
-		    // var imgHeight = jQuery(this).height();
-		    // var halfheight = (imgHeight / 2);
-		    // var position = jQuery(this).position();
-		    // var positionTop = (position.top + halfheight);
 		    jQuery("<span class='img-caption'>" + imageCaption + "</span>").css({
-		        // "position": "absolute",
-		        // "top": positionTop + "px",
-		        // "left": "0",
-		        // "right": "0",
-		        // "text-align": "center",
-		        // "width": imgWidth + "px"
 		    }).insertAfter(this);
 		}
 	});
@@ -51,7 +41,6 @@ function cta_height() {
 	jQuery(".cta_vt").each(function() {
 		var vt_img = jQuery(".vt_image");
 		var vt_img_height = (vt_img).height();
-		console.log(vt_img_height);
 		jQuery(this).css({
 			"height": vt_img_height + "px"
 		});

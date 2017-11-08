@@ -47,9 +47,11 @@ header{
 	.x-image{
 		width:100%;
 		height:auto;
+		display: block;
 		img{
 			width:100%;
 			height:auto;
+			display: block;
 			@media all and (max-width: 980px) {
 				width:100%;
 			}
@@ -64,6 +66,7 @@ header{
 	  position: relative;
 	  float: left;
 	  cursor: pointer;
+	  display: block;
 	}
 
 	.tint:before {
@@ -83,6 +86,7 @@ header{
 
 	.tint:hover:before {
 	  background: none;
+	  display: block;
 	}
 }
 
@@ -116,4 +120,71 @@ span.img-caption{
     @media all and (max-width: 980px) {
     	font-size: 2.0em;
     }
+}
+
+//Upper Email Box
+div.el1.x-section.email_box{
+	position: absolute;
+    z-index: 9999!important;
+    background-color: rgba(255,255,255, 0.7)!important;
+    padding: 2.0em 1.0em!important;
+    left: 6%;
+    top: 10%;
+    border: 1px solid $black;
+    max-width: 380px;
+    h2{
+    	font-family: 'Playfair Display', serif;
+    	font-size: 2.0em;
+    }
+}
+div.el1.x-section.head_email_form{
+	background-color:rgba(255,255,255,0.7)!important;
+	position: absolute;
+	width:100%;
+	display:block;
+	z-index:9999!important;
+	padding-top:1.2em!important;
+	h2{
+		font-family: 'Playfair Display', serif;
+    	font-size: 1.5em;
+    	padding-top:1.0em;
+    	width:30%;
+    	float:left;
+    	font-weight: 400;
+	}
+}
+
+.head_form{
+	width:50%;
+	float:right;
+
+	.tco-section{
+		@include clearfix;
+	}
+	.tco-subscribe-form {
+	    position: relative;
+	    float: right;
+	}
+	.tco-subscribe-form fieldset {
+	    padding: 0;
+	    margin: 0;
+	    border: 0;
+	    float:left;
+	}
+	.tco-subscribe-form label {
+	    margin: 0 0 0.375em;
+	    font-size: 0.65em;
+	    line-height: 1;
+	}	
+	.tco-subscribe-form input[type="submit"] {
+	    display: inline-block;
+	    width: 100%;
+	    margin-top: 0.9em;
+	    font-size: inherit;
+	    margin-left: 1.0em;
+	}
+	.tco-subscribe-form .tco-subscribe-form-alert-wrap {
+	    margin-top: 4.25em;
+	    font-size: inherit;
+	}
 }

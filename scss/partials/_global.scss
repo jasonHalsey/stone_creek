@@ -11,3 +11,19 @@
 .sc_top_row{
 	background-color: $tan;
 }
+
+@media (max-width: 1000px) {
+	.x-column.x-sm {
+	    float: none;
+	    width: 100%;
+	    margin-right: 0;
+	}
+}
+
+@media (max-width: 1000px){
+	.x-section .x-container.marginless-columns .x-column[class*="x-"] {
+	    display: block;
+	    width: 100%;
+	    vertical-align: inherit;
+	}
+}

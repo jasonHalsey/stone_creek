@@ -1,0 +1,48 @@
+.working_row{
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/working_bg.jpg');
+	margin: 0px;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    max-height: 800px;
+    min-height:400px;
+    height:100%;
+    .l_50_text{
+    	@include l_50_text_mix;
+    	max-width: 800px;
+    	margin: 5.0em 8.0em 10.0em 11.0em!important;;
+    	p{
+    		color:$white!important;
+    	}
+    	h2{
+    		color:$white!important;
+    	}
+    }
+}
+.schools_row{
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/schools.jpg');
+	margin: 0px;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    max-height: 800px;
+    min-height:400px;
+    height:100%;
+    .l_50_text{
+    	@include l_50_text_mix;
+    	max-width: 800px;
+    	margin: 5.0em 8.0em 10.0em 11.0em!important;;
+    	p{
+    		color:$white!important;
+    	}
+    	h2{
+    		color:$white!important;
+    	}
+    }
+}
+
+.shopping_50{
+	@include img_half;
+	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/shopping.jpg');
+}
+

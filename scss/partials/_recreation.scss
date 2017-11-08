@@ -50,6 +50,7 @@
 .vt_cta{
 	background-color: $tan!important;
 	position:relative;
+
 	.x-container.width{
 		width:100%;
 	}
@@ -93,6 +94,7 @@
 	.cta_vt{
 		text-align: center;
 		display:block;
+		min-height:200px;
 	}
 	.x-image img{		
 		width:100%;
