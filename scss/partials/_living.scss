@@ -46,3 +46,7 @@
 	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/shopping.jpg');
 }
 
+.airport_50{
+    @include img_half;
+    background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/airport_50.jpg');
+}

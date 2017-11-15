@@ -22,17 +22,18 @@ footer .x-container.max {
 	.x-column.last, .x-column:last-of-type {
 	    margin-right: 0;
 	    float:right;
-	    background-color: $lt_gray;
-	    padding:3.0em;
-	}
-
-	div.x-column.x-md.x-1-4:nth-child(2){
-		position: relative;
+	    position: relative;
 		height:100%;
 		.widget_custom_html{
 			position: absolute;
 			bottom:1%;
 		}
+	}
+
+	div.x-column.x-md.x-1-4:nth-child(2){
+		background-color: $lt_gray;
+		padding:3.0em;
+		
 	}
 	div.x-column.x-md.x-1-4:nth-child(3){
 		position: relative;

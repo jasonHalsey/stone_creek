@@ -365,46 +365,46 @@ footer .x-container.max {
 .x-colophon .x-column.last, .x-colophon .x-column:last-of-type {
   margin-right: 0;
   float: right;
-  background-color: #cbc7c7;
-  padding: 3.0em;
-}
-/* line 29, scss/partials/_footer.scss */
-.x-colophon div.x-column.x-md.x-1-4:nth-child(2) {
   position: relative;
   height: 100%;
 }
-/* line 32, scss/partials/_footer.scss */
-.x-colophon div.x-column.x-md.x-1-4:nth-child(2) .widget_custom_html {
+/* line 27, scss/partials/_footer.scss */
+.x-colophon .x-column.last .widget_custom_html, .x-colophon .x-column:last-of-type .widget_custom_html {
   position: absolute;
   bottom: 1%;
 }
-/* line 37, scss/partials/_footer.scss */
+/* line 33, scss/partials/_footer.scss */
+.x-colophon div.x-column.x-md.x-1-4:nth-child(2) {
+  background-color: #cbc7c7;
+  padding: 3.0em;
+}
+/* line 38, scss/partials/_footer.scss */
 .x-colophon div.x-column.x-md.x-1-4:nth-child(3) {
   position: relative;
   height: 100%;
 }
-/* line 40, scss/partials/_footer.scss */
+/* line 41, scss/partials/_footer.scss */
 .x-colophon div.x-column.x-md.x-1-4:nth-child(3) .widget_custom_html {
   position: absolute;
   bottom: 1%;
 }
-/* line 45, scss/partials/_footer.scss */
+/* line 46, scss/partials/_footer.scss */
 .x-colophon .widget_nav_menu ul {
   border-bottom: none;
 }
 
-/* line 49, scss/partials/_footer.scss */
+/* line 50, scss/partials/_footer.scss */
 .x-colophon.top {
   padding: 2% 0 2.25%;
   background-color: #808083;
 }
 
-/* line 54, scss/partials/_footer.scss */
+/* line 55, scss/partials/_footer.scss */
 .x-colophon .widget_nav_menu ul > li {
   position: relative;
 }
 
-/* line 57, scss/partials/_footer.scss */
+/* line 58, scss/partials/_footer.scss */
 .x-colophon .widget_nav_menu ul > li:after {
   content: "";
   display: block;
@@ -416,17 +416,17 @@ footer .x-container.max {
   bottom: 35%;
 }
 
-/* line 66, scss/partials/_footer.scss */
+/* line 67, scss/partials/_footer.scss */
 .x-colophon .widget_nav_menu ul > li:last-child:after {
   display: none;
 }
 
-/* line 69, scss/partials/_footer.scss */
+/* line 70, scss/partials/_footer.scss */
 .widget_nav_menu .current-menu-item > a:after {
   display: none;
 }
 
-/* line 72, scss/partials/_footer.scss */
+/* line 73, scss/partials/_footer.scss */
 section.footer_contact {
   color: #ffffff;
   font-size: 1.15em;
@@ -438,43 +438,43 @@ section.footer_contact::after {
   content: "";
   display: block;
 }
-/* line 77, scss/partials/_footer.scss */
+/* line 78, scss/partials/_footer.scss */
 section.footer_contact .top_slice {
   display: block;
   width: 100%;
   margin-bottom: 1.5em;
 }
-/* line 82, scss/partials/_footer.scss */
+/* line 83, scss/partials/_footer.scss */
 section.footer_contact .contact_img {
   display: block;
   width: 26%;
   float: left;
 }
-/* line 87, scss/partials/_footer.scss */
+/* line 88, scss/partials/_footer.scss */
 section.footer_contact .contact_info {
   display: block;
   width: 72%;
   float: left;
 }
-/* line 91, scss/partials/_footer.scss */
+/* line 92, scss/partials/_footer.scss */
 section.footer_contact .contact_info a {
   color: #ffffff;
 }
-/* line 94, scss/partials/_footer.scss */
+/* line 95, scss/partials/_footer.scss */
 section.footer_contact .contact_info ul {
   list-style-type: none;
 }
-/* line 96, scss/partials/_footer.scss */
+/* line 97, scss/partials/_footer.scss */
 section.footer_contact .contact_info ul li {
   width: 100%;
   line-height: 1.65;
 }
-/* line 99, scss/partials/_footer.scss */
+/* line 100, scss/partials/_footer.scss */
 section.footer_contact .contact_info ul li img {
   width: 80%;
   height: auto;
 }
-/* line 105, scss/partials/_footer.scss */
+/* line 106, scss/partials/_footer.scss */
 section.footer_contact .contact_info ul li.bottom_space {
   margin-bottom: 0.5em;
 }
@@ -670,8 +670,28 @@ div.el1.x-section.email_box h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.0em;
 }
+@media all and (max-width: 1500px) {
+  /* line 126, scss/partials/_home.scss */
+  div.el1.x-section.email_box {
+    padding: 1em 1em 0 !important;
+    left: 0%;
+    right: 0;
+    top: 0%;
+    border: none;
+    max-width: 100%;
+  }
+  /* line 146, scss/partials/_home.scss */
+  div.el1.x-section.email_box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    padding-top: 1.0em;
+    width: 40%;
+    float: left;
+    font-weight: 400;
+  }
+}
 
-/* line 140, scss/partials/_home.scss */
+/* line 156, scss/partials/_home.scss */
 div.el1.x-section.head_email_form {
   background-color: rgba(255, 255, 255, 0.7) !important;
   position: absolute;
@@ -680,7 +700,7 @@ div.el1.x-section.head_email_form {
   z-index: 9999 !important;
   padding-top: 1.2em !important;
 }
-/* line 147, scss/partials/_home.scss */
+/* line 163, scss/partials/_home.scss */
 div.el1.x-section.head_email_form h2 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5em;
@@ -690,7 +710,7 @@ div.el1.x-section.head_email_form h2 {
   font-weight: 400;
 }
 
-/* line 157, scss/partials/_home.scss */
+/* line 173, scss/partials/_home.scss */
 .head_form {
   width: 50%;
   float: right;
@@ -701,25 +721,25 @@ div.el1.x-section.head_email_form h2 {
   content: "";
   display: block;
 }
-/* line 164, scss/partials/_home.scss */
+/* line 180, scss/partials/_home.scss */
 .head_form .tco-subscribe-form {
   position: relative;
   float: right;
 }
-/* line 168, scss/partials/_home.scss */
+/* line 184, scss/partials/_home.scss */
 .head_form .tco-subscribe-form fieldset {
   padding: 0;
   margin: 0;
   border: 0;
   float: left;
 }
-/* line 174, scss/partials/_home.scss */
+/* line 190, scss/partials/_home.scss */
 .head_form .tco-subscribe-form label {
   margin: 0 0 0.375em;
   font-size: 0.65em;
   line-height: 1;
 }
-/* line 179, scss/partials/_home.scss */
+/* line 195, scss/partials/_home.scss */
 .head_form .tco-subscribe-form input[type="submit"] {
   display: inline-block;
   width: 100%;
@@ -727,10 +747,55 @@ div.el1.x-section.head_email_form h2 {
   font-size: inherit;
   margin-left: 1.0em;
 }
-/* line 186, scss/partials/_home.scss */
+/* line 202, scss/partials/_home.scss */
 .head_form .tco-subscribe-form .tco-subscribe-form-alert-wrap {
   margin-top: 4.25em;
   font-size: inherit;
+}
+
+@media all and (max-width: 1500px) {
+  /* line 208, scss/partials/_home.scss */
+  .home_head_form {
+    width: 50%;
+    float: right;
+  }
+  /* line 20, scss/bourbon/bourbon/library/_clearfix.scss */
+  .home_head_form .tco-section::after {
+    clear: both;
+    content: "";
+    display: block;
+  }
+  /* line 216, scss/partials/_home.scss */
+  .home_head_form .tco-subscribe-form {
+    position: relative;
+    float: right;
+  }
+  /* line 220, scss/partials/_home.scss */
+  .home_head_form .tco-subscribe-form fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    float: left;
+  }
+  /* line 226, scss/partials/_home.scss */
+  .home_head_form .tco-subscribe-form label {
+    margin: 0 0 0.375em;
+    font-size: 0.65em;
+    line-height: 1;
+  }
+  /* line 231, scss/partials/_home.scss */
+  .home_head_form .tco-subscribe-form input[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0.9em;
+    font-size: inherit;
+    margin-left: 1.0em;
+  }
+  /* line 238, scss/partials/_home.scss */
+  .home_head_form .tco-subscribe-form .tco-subscribe-form-alert-wrap {
+    margin-top: 4.25em;
+    font-size: inherit;
+  }
 }
 
 /* line 1, scss/partials/_recreation.scss */
@@ -1281,6 +1346,20 @@ a.more:before {
   opacity: 0;
 }
 
+/* line 49, scss/partials/_living.scss */
+.airport_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/airport_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.airport_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
 /* line 2, scss/partials/_old_farm.scss */
 .history_row {
   max-width: 1400px !important;
@@ -1358,6 +1437,20 @@ a.more:before {
 }
 
 /* line 17, scss/partials/_bend.scss */
+.breweries_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/breweries_50.jpg");
+}
+/* line 23, scss/partials/_mixins.scss */
+.breweries_50 img {
+  visibility: hiddem;
+  opacity: 0;
+}
+
+/* line 21, scss/partials/_bend.scss */
 .foodcart_50 {
   margin: 0px;
   width: 100%;
@@ -1369,4 +1462,10 @@ a.more:before {
 .foodcart_50 img {
   visibility: hiddem;
   opacity: 0;
+}
+
+/* line 2, scss/partials/_map.scss */
+#map {
+  height: 100%;
+  min-height: 70vh;
 }
