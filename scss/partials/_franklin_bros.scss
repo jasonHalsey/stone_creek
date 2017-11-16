@@ -1,0 +1,31 @@
+.neighborhood_content{
+	p{
+	  font-family: 'Lato', sans-serif;
+      font-size: 1.6em;
+      line-height:1.75;
+      color: $true_blk;
+	}
+	li{
+
+	}
+	a{
+		width: 100%;
+		display: block;
+		color:$white;
+		font-family: 'Playfair Display', serif;
+     	font-size: 2.0em;
+     	line-height:1.75;
+     	background-color: $btn_grn;
+     	padding:0.5em 1.0em;
+     	&:hover{
+     		color:$white;
+     		background-color: $title_grn;
+     	}
+	}
+	.neighborhood_links{
+		padding-right:12.0em;
+		ul{
+			margin-bottom: 2.0em;
+		}
+	}
+}

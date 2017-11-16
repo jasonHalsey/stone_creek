@@ -1,5 +1,13 @@
 
 #map {
-height: 100%;
-min-height: 70vh;
+	height: 100%;
+	min-height: 70vh;
+}
+.map_intro_row{
+	background-color: $tan!important;
+	position:relative;
+	p{
+	 font-family: 'Playfair Display', serif;
+     font-size: 2.85em;
+	}
 }

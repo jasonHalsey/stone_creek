@@ -1,6 +1,7 @@
 jQuery(document).ready(function() {
 	cta_text();	
 	footer_col_height();
+
 });
 
 jQuery( window ).resize(function() {
@@ -8,6 +9,7 @@ jQuery( window ).resize(function() {
 });
 
 jQuery( window ).load(function() {
+	
   wrap_cta() ;
 });
 function cta_text() {

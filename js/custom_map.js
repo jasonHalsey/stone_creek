@@ -1,17 +1,6 @@
 
-
-      // This example creates a custom overlay called USGSOverlay, containing
-      // a U.S. Geological Survey (USGS) image of the relevant area on the map.
-
-      // Set the custom overlay object's prototype to a new instance
-      // of OverlayView. In effect, this will subclass the overlay class therefore
-      // it's simpler to load the API synchronously, using
-      // google.maps.event.addDomListener().
-      // Note that we set the prototype to an instance, rather than the
-      // parent class itself, because we do not wish to modify the parent class.
-
       var overlay;
-      USGSOverlay.prototype = new google.maps.OverlayView();
+      StoneCreekOverlay.prototype = new google.maps.OverlayView();
 
       // Initialize the map and the custom overlay.
 
@@ -34,15 +23,17 @@
             new google.maps.LatLng(44.038530, -121.293800));
 
         // Overlay URL
-        var srcImage = 'http://localhost:8888/stone_creek/wp-content/uploads/2017/11/map_overlay.png';
+        // var srcImage = 'http://localhost:8888/stone_creek/wp-content/uploads/2017/11/map_overlay.png';
+        var srcImage = 'http://dev.highline-dev.com/clients/stone_creek/wp-content/uploads/2017/11/map_overlay.png';
+        
 
-        // The custom USGSOverlay object contains the USGS image,
+        // The custom StoneCreekOverlay object contains the map image,
         // the bounds of the image, and a reference to the map.
-        overlay = new USGSOverlay(bounds, srcImage, map);
+        overlay = new StoneCreekOverlay(bounds, srcImage, map);
       }
 
       /** @constructor */
-      function USGSOverlay(bounds, image, map) {
+      function StoneCreekOverlay(bounds, image, map) {
 
         // Initialize all properties.
         this.bounds_ = bounds;
@@ -62,7 +53,7 @@
        * onAdd is called when the map's panes are ready and the overlay has been
        * added to the map.
        */
-      USGSOverlay.prototype.onAdd = function() {
+      StoneCreekOverlay.prototype.onAdd = function() {
 
         var div = document.createElement('div');
         div.style.borderStyle = 'none';
@@ -84,7 +75,7 @@
         panes.overlayLayer.appendChild(div);
       };
 
-      USGSOverlay.prototype.draw = function() {
+      StoneCreekOverlay.prototype.draw = function() {
 
         // We use the south-west and north-east
         // coordinates of the overlay to peg it to the correct position and size.
@@ -107,7 +98,7 @@
 
       // The onRemove() method will be called automatically from the API if
       // we ever set the overlay's map property to 'null'.
-      USGSOverlay.prototype.onRemove = function() {
+      StoneCreekOverlay.prototype.onRemove = function() {
         this.div_.parentNode.removeChild(this.div_);
         this.div_ = null;
       };

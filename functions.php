@@ -34,7 +34,10 @@ function wpb_adding_scripts() {
 	wp_register_script('map', get_stylesheet_directory_uri() . '/js/custom_map.js');
 
 	wp_enqueue_script('stone');
-	wp_enqueue_script('map');
+
+    wp_enqueue_script('map');
+
+	
 
 }
 add_action( 'wp_footer', 'wpb_adding_scripts' ); 
