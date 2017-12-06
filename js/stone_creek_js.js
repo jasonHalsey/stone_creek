@@ -2,6 +2,11 @@ jQuery(document).ready(function() {
 	cta_text();	
 	footer_col_height();
 
+	jQuery("a[href='#bottom']").click(function() {
+	  jQuery("html, body").animate({ scrollTop: jQuery(document).height() }, "slow");
+	  return false;
+	});
+
 });
 
 jQuery( window ).resize(function() {
@@ -49,3 +54,6 @@ function cta_height() {
 		});
 	});
 }
+
+
+

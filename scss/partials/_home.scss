@@ -104,7 +104,6 @@ span.img-caption{
 	position: absolute;
 	z-index:777;
 	width:100%;
-	// position: relative;
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
@@ -240,4 +239,15 @@ div.el1.x-section.head_email_form{
 		    font-size: inherit;
 		}
 	}
+}
+
+.x-btn, .button, [type="submit"] {
+    color: $white!important;
+    background-color: $btn_grn!important;
+	border: 1px solid $true_blk!important;
+    text-shadow: none!important;
+    border-radius: 0!important;
+    &:hover{
+  		background-color: $title_grn!important;
+  	}
 }

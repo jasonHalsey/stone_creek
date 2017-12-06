@@ -27,5 +27,18 @@
 		ul{
 			margin-bottom: 2.0em;
 		}
+		.menu_image{
+			img{
+				width:25%;
+				height:auto;
+			}
+		}
+	}
+}
+
+.franklin_intro{
+	background-color: $tan!important;
+	div.sc_top_row{
+		max-width: 1400px!important;
 	}
 }
