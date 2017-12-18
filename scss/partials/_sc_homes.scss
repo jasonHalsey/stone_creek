@@ -54,6 +54,9 @@ a.available{
 	  margin: 8px 18px 0 0;
 	  background: url(images/person2_icon.png);
 	}
+	@media all and (max-width: 900px) {
+		font-size: 18px;
+	}
 }
 a.more{
 	color:$true_blk;
@@ -75,5 +78,8 @@ a.more{
 	  height: 26px;
 	  margin: 8px 18px 0 0;
 	  background: url(images/housing_icon.png);
+	}
+	@media all and (max-width: 900px) {
+		font-size: 18px;
 	}
 }

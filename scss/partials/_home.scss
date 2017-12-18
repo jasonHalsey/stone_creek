@@ -1,4 +1,9 @@
 header{
+	position: fixed;
+	z-index:777;
+	top:0;
+	left:0;
+	right:0;
 	.x-container.max{
 		max-width: 100%;
 	}
@@ -151,13 +156,16 @@ div.el1.x-section.email_box{
 	    	font-weight: 400;
 		}
     }
+    @media all and (max-width: 400px) {
+		display:none;
+	}
 }
 div.el1.x-section.head_email_form{
 	background-color:rgba(255,255,255,0.7)!important;
 	position: absolute;
 	width:100%;
 	display:block;
-	z-index:9999!important;
+	z-index:666!important;
 	padding-top:1.2em!important;
 	h2{
 		font-family: 'Playfair Display', serif;
@@ -166,6 +174,9 @@ div.el1.x-section.head_email_form{
     	width:30%;
     	float:left;
     	font-weight: 400;
+	}
+	@media all and (max-width: 400px) {
+		display:none;
 	}
 }
 
@@ -201,6 +212,12 @@ div.el1.x-section.head_email_form{
 	.tco-subscribe-form .tco-subscribe-form-alert-wrap {
 	    margin-top: 4.25em;
 	    font-size: inherit;
+	}
+	@media all and (max-width: 1340px) {
+		width:100%;
+		float:none;
+		display:block;
+		margin: 0 auto;
 	}
 }
 
@@ -238,6 +255,15 @@ div.el1.x-section.head_email_form{
 		    margin-top: 4.25em;
 		    font-size: inherit;
 		}
+	}
+	@media all and (max-width: 1340px) {
+		width:100%;
+		float:none;
+		display:block;
+		margin: 0 auto 1.0em;
+	}
+	@media all and (max-width: 400px) {
+		display:none;
 	}
 }
 

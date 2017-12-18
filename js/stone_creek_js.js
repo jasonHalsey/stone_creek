@@ -1,20 +1,21 @@
 jQuery(document).ready(function() {
 	cta_text();	
 	footer_col_height();
+	header_height() ;
 
 	jQuery("a[href='#bottom']").click(function() {
 	  jQuery("html, body").animate({ scrollTop: jQuery(document).height() }, "slow");
 	  return false;
 	});
-
 });
 
 jQuery( window ).resize(function() {
 	cta_height();
+	header_height();
+	footer_col_height();
 });
 
-jQuery( window ).load(function() {
-	
+jQuery( window ).load(function() {	
   wrap_cta() ;
 });
 function cta_text() {
@@ -25,6 +26,13 @@ function cta_text() {
 		    }).insertAfter(this);
 		}
 	});
+}
+
+function header_height() {
+	var header_height = jQuery('.x-navbar').height();
+	jQuery('div.el1.x-section.head_email_form').css('margin-top',header_height);
+	jQuery('div.el1.x-section.email_box').css('margin-top',header_height);
+	console.log('Fired Header Size at:');
 }
 
 function footer_col_height() {
