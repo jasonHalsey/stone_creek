@@ -17,13 +17,16 @@
 
 @mixin img_half() {
   margin: 0px;
-    width: 100%;
-    background-size: cover;
-    background-position: 50%;
-    img{
-      visibility: hiddem;
-      opacity: 0;
-    }
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  img{
+    visibility: hiddem;
+    opacity: 0;
+  }
+  @media all and (max-width: 900px) {
+    opacity:1;
+  }
 }
 
 @mixin r_50_text_mix() {
@@ -53,6 +56,10 @@
         }
       }
     }
+    @media all and (max-width: 900px) {
+      float:none;
+      margin:3.0em 2.0em;
+    }
 }
 
 @mixin l_50_text_mix() {
@@ -81,5 +88,9 @@
           font-weight: 600;
         }
       }
+    }
+    @media all and (max-width: 900px) {
+      float:none;
+      margin:3.0em 2.0em;
     }
 }

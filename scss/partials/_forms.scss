@@ -1,0 +1,18 @@
+
+#container, html.embed {
+    background-color: transparent;
+}
+
+.wufoo .info, .wufoo .paging-context {
+    display:none;
+}
+
+.wufoo label.desc, .wufoo legend.desc {
+    margin: 0 0 0.375em;
+    font-size: 0.85em;
+    line-height: 1;
+    font-family: "Open Sans",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: hsl(0,0%,37%);
+}

@@ -1,21 +1,23 @@
 jQuery(document).ready(function() {
 	cta_text();	
 	footer_col_height();
+	header_height() ;
 
 	jQuery("a[href='#bottom']").click(function() {
 	  jQuery("html, body").animate({ scrollTop: jQuery(document).height() }, "slow");
 	  return false;
 	});
-
 });
 
 jQuery( window ).resize(function() {
 	cta_height();
+	header_height();
+	footer_col_height();
 });
 
-jQuery( window ).load(function() {
-	
-  wrap_cta() ;
+jQuery( window ).load(function() {	
+  wrap_cta();
+  header_height();
 });
 function cta_text() {
 	jQuery("#cta_row img").each(function() {
@@ -25,6 +27,13 @@ function cta_text() {
 		    }).insertAfter(this);
 		}
 	});
+}
+
+function header_height() {
+	var header_height = jQuery('.x-navbar').height();
+	jQuery('div.el1.x-section.head_email_form').css('margin-top',header_height);
+	jQuery('div.el1.x-section.email_box').css('margin-top',header_height);
+	jQuery('#rev_slider_3_1_forcefullwidth').css('margin-top',header_height);
 }
 
 function footer_col_height() {
