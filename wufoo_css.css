@@ -104,7 +104,7 @@ form#form467 li{
 
 
 #form469 input[type="text"]{
-	width: 100%;
+	width: 96%;
     margin-bottom: 1.25em;
     font-size: inherit;
     display: inline-block;
@@ -120,7 +120,7 @@ form#form467 li{
     font-family: "Open Sans",sans-serif;
 }
 #form469 input[type="email"]{
-	width: 100%;
+	width: 96%;
     margin-bottom: 1.25em;
     font-size: inherit;
     display: inline-block;
@@ -152,10 +152,13 @@ form#form467 li{
     border: 1px solid #000 !important;
     text-shadow: none !important;
     border-radius: 0 !important;
-    width:100%;
+    width:96%;
 }
 .noI form#form469  li, .altInstruct form#form469  li{
 	width:100%!important;
 	float:none;
 }
 
+#form469 #errorLi, #form469 .error-container{
+    width:96%!important;
+}
