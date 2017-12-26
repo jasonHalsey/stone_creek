@@ -2,6 +2,9 @@ footer .x-container.max {
     max-width: 1950px;
 }
 .x-colophon {
+	h4{
+		font-size: 170%;
+	}
 	.widget ul li {
 	    background-color: transparent;
 	    float: left;
@@ -16,6 +19,12 @@ footer .x-container.max {
 			font-size: 1.5em;
 		}
 	}
+	div.x-column.x-md.x-1-4{
+		@include clearfix;
+		@media all and (max-width: 1175px) {
+			width:100%
+		}
+	}
 	.x-1-4:first-child{
 		width:100%;
 	}
@@ -27,6 +36,11 @@ footer .x-container.max {
 		.widget_custom_html{
 			position: absolute;
 			bottom:1%;
+			@media all and (max-width: 1200px) {
+				position: relative;
+				bottom:0;
+				padding-bottom: 2.0em;
+			}
 		}
 	}
 
@@ -41,10 +55,20 @@ footer .x-container.max {
 		.widget_custom_html{
 			position: absolute;
 			bottom:1%;
+			@media all and (max-width: 1200px) {
+				position: relative;
+				bottom:0;
+				margin-top: 3em;
+			}
 		}
 	}
 	.widget_nav_menu ul{
 		border-bottom: none;
+	}
+	#tco_email_form-2{
+		@media all and (max-width: 1175px) {
+			margin-top:0em;
+		}
 	}
 }
 .x-colophon.top {
@@ -109,3 +133,4 @@ section.footer_contact{
 		}
 	}
 }
+

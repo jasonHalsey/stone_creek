@@ -39,12 +39,22 @@ function header_height() {
 function footer_col_height() {
 	var last_col_height = jQuery('div.x-column.x-md.x-1-4:nth-child(2)').height();
 	var new_col_height = (last_col_height + 83);
-	// jQuery('div.x-column.x-md.x-1-4:nth-child(2)').css({
-	jQuery('div.x-column.x-md.x-1-4.last').css({
-		"height": new_col_height + "px"
-	});jQuery('div.x-column.x-md.x-1-4:nth-child(3)').css({
-		"height": new_col_height + "px"
-	});
+	
+
+	if (Modernizr.mq('only screen and (min-width: 1200px)')) {
+		jQuery('div.x-column.x-md.x-1-4.last').css({
+			"height": new_col_height + "px"
+		});
+
+		jQuery('div.x-column.x-md.x-1-4:nth-child(3)').css({
+			"height": new_col_height + "px"
+		});
+
+	}else if (Modernizr.mq('only screen and (max-width: 1199px)')) {
+		jQuery('div.x-column.x-md.x-1-4.last').css("height","inherit");
+
+		jQuery('div.x-column.x-md.x-1-4:nth-child(3)').css("height","inherit");
+	}
 }
 
 function wrap_cta() {

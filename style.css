@@ -347,70 +347,108 @@ footer .x-container.max {
 }
 
 /* line 5, scss/partials/_footer.scss */
+.x-colophon h4 {
+  font-size: 170%;
+}
+/* line 8, scss/partials/_footer.scss */
 .x-colophon .widget ul li {
   background-color: transparent;
   float: left;
   margin-right: 1.5em;
   padding-right: 1.5em;
 }
-/* line 11, scss/partials/_footer.scss */
+/* line 14, scss/partials/_footer.scss */
 .x-colophon .widget_nav_menu ul > li {
   border-top: none;
 }
-/* line 13, scss/partials/_footer.scss */
+/* line 16, scss/partials/_footer.scss */
 .x-colophon .widget_nav_menu ul > li a {
   color: #ffffff;
   font-family: 'Lato', sans-serif;
   font-size: 1.5em;
 }
-/* line 19, scss/partials/_footer.scss */
+/* line 20, scss/bourbon/bourbon/library/_clearfix.scss */
+.x-colophon div.x-column.x-md.x-1-4::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+@media all and (max-width: 1175px) {
+  /* line 22, scss/partials/_footer.scss */
+  .x-colophon div.x-column.x-md.x-1-4 {
+    width: 100%;
+  }
+}
+/* line 28, scss/partials/_footer.scss */
 .x-colophon .x-1-4:first-child {
   width: 100%;
 }
-/* line 22, scss/partials/_footer.scss */
+/* line 31, scss/partials/_footer.scss */
 .x-colophon .x-column.last, .x-colophon .x-column:last-of-type {
   margin-right: 0;
   float: right;
   position: relative;
   height: 100%;
 }
-/* line 27, scss/partials/_footer.scss */
+/* line 36, scss/partials/_footer.scss */
 .x-colophon .x-column.last .widget_custom_html, .x-colophon .x-column:last-of-type .widget_custom_html {
   position: absolute;
   bottom: 1%;
 }
-/* line 33, scss/partials/_footer.scss */
+@media all and (max-width: 1200px) {
+  /* line 36, scss/partials/_footer.scss */
+  .x-colophon .x-column.last .widget_custom_html, .x-colophon .x-column:last-of-type .widget_custom_html {
+    position: relative;
+    bottom: 0;
+    padding-bottom: 2.0em;
+  }
+}
+/* line 47, scss/partials/_footer.scss */
 .x-colophon div.x-column.x-md.x-1-4:nth-child(2) {
   background-color: #cbc7c7;
   padding: 3.0em;
 }
-/* line 38, scss/partials/_footer.scss */
+/* line 52, scss/partials/_footer.scss */
 .x-colophon div.x-column.x-md.x-1-4:nth-child(3) {
   position: relative;
   height: 100%;
 }
-/* line 41, scss/partials/_footer.scss */
+/* line 55, scss/partials/_footer.scss */
 .x-colophon div.x-column.x-md.x-1-4:nth-child(3) .widget_custom_html {
   position: absolute;
   bottom: 1%;
 }
-/* line 46, scss/partials/_footer.scss */
+@media all and (max-width: 1200px) {
+  /* line 55, scss/partials/_footer.scss */
+  .x-colophon div.x-column.x-md.x-1-4:nth-child(3) .widget_custom_html {
+    position: relative;
+    bottom: 0;
+    margin-top: 3em;
+  }
+}
+/* line 65, scss/partials/_footer.scss */
 .x-colophon .widget_nav_menu ul {
   border-bottom: none;
 }
+@media all and (max-width: 1175px) {
+  /* line 68, scss/partials/_footer.scss */
+  .x-colophon #tco_email_form-2 {
+    margin-top: 0em;
+  }
+}
 
-/* line 50, scss/partials/_footer.scss */
+/* line 74, scss/partials/_footer.scss */
 .x-colophon.top {
   padding: 2% 0 2.25%;
   background-color: #808083;
 }
 
-/* line 55, scss/partials/_footer.scss */
+/* line 79, scss/partials/_footer.scss */
 .x-colophon .widget_nav_menu ul > li {
   position: relative;
 }
 
-/* line 58, scss/partials/_footer.scss */
+/* line 82, scss/partials/_footer.scss */
 .x-colophon .widget_nav_menu ul > li:after {
   content: "";
   display: block;
@@ -422,17 +460,17 @@ footer .x-container.max {
   bottom: 35%;
 }
 
-/* line 67, scss/partials/_footer.scss */
+/* line 91, scss/partials/_footer.scss */
 .x-colophon .widget_nav_menu ul > li:last-child:after {
   display: none;
 }
 
-/* line 70, scss/partials/_footer.scss */
+/* line 94, scss/partials/_footer.scss */
 .widget_nav_menu .current-menu-item > a:after {
   display: none;
 }
 
-/* line 73, scss/partials/_footer.scss */
+/* line 97, scss/partials/_footer.scss */
 section.footer_contact {
   color: #ffffff;
   font-size: 1.15em;
@@ -444,43 +482,43 @@ section.footer_contact::after {
   content: "";
   display: block;
 }
-/* line 78, scss/partials/_footer.scss */
+/* line 102, scss/partials/_footer.scss */
 section.footer_contact .top_slice {
   display: block;
   width: 100%;
   margin-bottom: 1.5em;
 }
-/* line 83, scss/partials/_footer.scss */
+/* line 107, scss/partials/_footer.scss */
 section.footer_contact .contact_img {
   display: block;
   width: 26%;
   float: left;
 }
-/* line 88, scss/partials/_footer.scss */
+/* line 112, scss/partials/_footer.scss */
 section.footer_contact .contact_info {
   display: block;
   width: 72%;
   float: left;
 }
-/* line 92, scss/partials/_footer.scss */
+/* line 116, scss/partials/_footer.scss */
 section.footer_contact .contact_info a {
   color: #ffffff;
 }
-/* line 95, scss/partials/_footer.scss */
+/* line 119, scss/partials/_footer.scss */
 section.footer_contact .contact_info ul {
   list-style-type: none;
 }
-/* line 97, scss/partials/_footer.scss */
+/* line 121, scss/partials/_footer.scss */
 section.footer_contact .contact_info ul li {
   width: 100%;
   line-height: 1.65;
 }
-/* line 100, scss/partials/_footer.scss */
+/* line 124, scss/partials/_footer.scss */
 section.footer_contact .contact_info ul li img {
   width: 80%;
   height: auto;
 }
-/* line 106, scss/partials/_footer.scss */
+/* line 130, scss/partials/_footer.scss */
 section.footer_contact .contact_info ul li.bottom_space {
   margin-bottom: 0.5em;
 }
@@ -675,7 +713,7 @@ div.x-section.email_box {
   background-color: rgba(255, 255, 255, 0.7) !important;
   padding: 2em 1em !important;
   left: 6%;
-  top: 10%;
+  top: 18%;
   border: 1px solid #3C3b3b;
   max-width: 380px;
 }
@@ -709,7 +747,7 @@ div.el1.x-section.head_email_form h2 {
   float: left;
   font-weight: 400;
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 1025px) {
   /* line 148, scss/partials/_home.scss */
   div.el1.x-section.head_email_form {
     display: none;
