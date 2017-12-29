@@ -160,11 +160,19 @@ div.el1.x-section.head_email_form{
     	float:left;
     	font-weight: 400;
 	}
-	@media all and (max-width: 1025px) {
+	@media all and (max-width: 860px) {
 		display:none;
 	}
-	@media all and (min-width: 1501px) {
-		display:none;
+	
+}
+body.home{
+	div.el1.x-section.head_email_form{
+		@media all and (max-width: 1025px) {
+			display:none;
+		}
+		@media all and (min-width: 1501px) {
+			display:none;
+		}
 	}
 }
 

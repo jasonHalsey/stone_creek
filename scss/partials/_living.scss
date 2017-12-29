@@ -1,5 +1,5 @@
 .working_row{
-	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/working_bg.jpg');
+	background-image: url('images/working_bg.jpg');
 	margin: 0px;
     width: 100%;
     background-size: cover;
@@ -20,7 +20,7 @@
     }
 }
 .schools_row{
-	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/schools.jpg');
+	background-image: url('images/schools.jpg');
 	margin: 0px;
     width: 100%;
     background-size: cover;
@@ -43,10 +43,10 @@
 
 .shopping_50{
 	@include img_half;
-	background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/shopping.jpg');
+	background-image: url('images/shopping.jpg');
 }
 
 .airport_50{
     @include img_half;
-    background-image: url('http://localhost:8888/stone_creek/wp-content/uploads/2017/11/airport_50.jpg');
+    background-image: url('images/airport_50.jpg');
 }

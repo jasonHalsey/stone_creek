@@ -747,20 +747,27 @@ div.el1.x-section.head_email_form h2 {
   float: left;
   font-weight: 400;
 }
-@media all and (max-width: 1025px) {
-  /* line 148, scss/partials/_home.scss */
-  div.el1.x-section.head_email_form {
-    display: none;
-  }
-}
-@media all and (min-width: 1501px) {
+@media all and (max-width: 860px) {
   /* line 148, scss/partials/_home.scss */
   div.el1.x-section.head_email_form {
     display: none;
   }
 }
 
-/* line 171, scss/partials/_home.scss */
+@media all and (max-width: 1025px) {
+  /* line 169, scss/partials/_home.scss */
+  body.home div.el1.x-section.head_email_form {
+    display: none;
+  }
+}
+@media all and (min-width: 1501px) {
+  /* line 169, scss/partials/_home.scss */
+  body.home div.el1.x-section.head_email_form {
+    display: none;
+  }
+}
+
+/* line 179, scss/partials/_home.scss */
 .head_form {
   width: 50%;
   float: right;
@@ -771,25 +778,25 @@ div.el1.x-section.head_email_form h2 {
   content: "";
   display: block;
 }
-/* line 178, scss/partials/_home.scss */
+/* line 186, scss/partials/_home.scss */
 .head_form .tco-subscribe-form {
   position: relative;
   float: right;
 }
-/* line 182, scss/partials/_home.scss */
+/* line 190, scss/partials/_home.scss */
 .head_form .tco-subscribe-form fieldset {
   padding: 0;
   margin: 0;
   border: 0;
   float: left;
 }
-/* line 188, scss/partials/_home.scss */
+/* line 196, scss/partials/_home.scss */
 .head_form .tco-subscribe-form label {
   margin: 0 0 0.375em;
   font-size: 0.65em;
   line-height: 1;
 }
-/* line 193, scss/partials/_home.scss */
+/* line 201, scss/partials/_home.scss */
 .head_form .tco-subscribe-form input[type="submit"] {
   display: inline-block;
   width: 100%;
@@ -797,14 +804,14 @@ div.el1.x-section.head_email_form h2 {
   font-size: inherit;
   margin-left: 1.0em;
 }
-/* line 200, scss/partials/_home.scss */
+/* line 208, scss/partials/_home.scss */
 .head_form .tco-subscribe-form .tco-subscribe-form-alert-wrap {
   margin-top: 4.25em;
   font-size: inherit;
 }
 
 @media all and (max-width: 1500px) {
-  /* line 206, scss/partials/_home.scss */
+  /* line 214, scss/partials/_home.scss */
   .home_head_form {
     width: 60%;
     float: right;
@@ -815,25 +822,25 @@ div.el1.x-section.head_email_form h2 {
     content: "";
     display: block;
   }
-  /* line 214, scss/partials/_home.scss */
+  /* line 222, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form {
     position: relative;
     float: right;
   }
-  /* line 218, scss/partials/_home.scss */
+  /* line 226, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form fieldset {
     padding: 0;
     margin: 0;
     border: 0;
     float: left;
   }
-  /* line 224, scss/partials/_home.scss */
+  /* line 232, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form label {
     margin: 0 0 0.375em;
     font-size: 0.65em;
     line-height: 1;
   }
-  /* line 229, scss/partials/_home.scss */
+  /* line 237, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form input[type="submit"] {
     display: inline-block;
     width: 100%;
@@ -841,14 +848,14 @@ div.el1.x-section.head_email_form h2 {
     font-size: inherit;
     margin-left: 1.0em;
   }
-  /* line 236, scss/partials/_home.scss */
+  /* line 244, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form .tco-subscribe-form-alert-wrap {
     margin-top: 4.25em;
     font-size: inherit;
   }
 }
 
-/* line 243, scss/partials/_home.scss */
+/* line 251, scss/partials/_home.scss */
 .x-btn, .button, [type="submit"] {
   color: #ffffff !important;
   background-color: #849b61 !important;
@@ -856,12 +863,12 @@ div.el1.x-section.head_email_form h2 {
   text-shadow: none !important;
   border-radius: 0 !important;
 }
-/* line 249, scss/partials/_home.scss */
+/* line 257, scss/partials/_home.scss */
 .x-btn:hover, .button:hover, [type="submit"]:hover {
   background-color: #658239 !important;
 }
 
-/* line 254, scss/partials/_home.scss */
+/* line 262, scss/partials/_home.scss */
 .head_form iframe {
   height: 90px;
 }
@@ -960,11 +967,11 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/old_mill_50.jpg");
+  background-image: url("images/old_mill_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .old_mill_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -980,11 +987,11 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/downtown_50.jpg");
+  background-image: url("images/downtown_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .downtown_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1000,11 +1007,11 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/mountainbiking_50.jpg");
+  background-image: url("images/mountainbiking_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .mountainbike_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1020,11 +1027,11 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/smith_rock_50.jpg");
+  background-image: url("images/smith_rock_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .hiking_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1040,11 +1047,11 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/slkiing_50.jpg");
+  background-image: url("images/slkiing_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .skiing_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1060,11 +1067,11 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/fly_fishing_50.jpg");
+  background-image: url("images/fly_fishing_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .fishing_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1080,11 +1087,11 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/golfing_50.jpg");
+  background-image: url("images/golfing_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .golfing_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1174,11 +1181,11 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/onyx.jpg");
+  background-image: url("images/onyx.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .onyx_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1194,11 +1201,11 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/sapphire.jpg");
+  background-image: url("images/sapphire.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .sapphire_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1214,11 +1221,11 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/ruby.jpg");
+  background-image: url("images/ruby.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .ruby_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1234,11 +1241,11 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/gernet.jpg");
+  background-image: url("images/gernet.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .garnet_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1254,11 +1261,11 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/emerald.jpg");
+  background-image: url("images/emerald.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .emerald_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1414,7 +1421,7 @@ a.more:before {
 
 /* line 1, scss/partials/_living.scss */
 .working_row {
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/working_bg.jpg");
+  background-image: url("images/working_bg.jpg");
   margin: 0px;
   width: 100%;
   background-size: cover;
@@ -1474,7 +1481,7 @@ a.more:before {
 
 /* line 22, scss/partials/_living.scss */
 .schools_row {
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/schools.jpg");
+  background-image: url("images/schools.jpg");
   margin: 0px;
   width: 100%;
   background-size: cover;
@@ -1538,11 +1545,11 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/shopping.jpg");
+  background-image: url("images/shopping.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .shopping_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1558,11 +1565,11 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/airport_50.jpg");
+  background-image: url("images/airport_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .airport_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1598,11 +1605,11 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/fall_fest_50.jpg");
+  background-image: url("images/fall_fest_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .fall_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1618,11 +1625,11 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/winter_50.jpg");
+  background-image: url("images/winter_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .winter_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1638,11 +1645,11 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/summer_50.jpg");
+  background-image: url("images/summer_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .summer_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1658,11 +1665,11 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/drake_50.jpg");
+  background-image: url("images/drake_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .drake_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1678,11 +1685,11 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/breweries_50.jpg");
+  background-image: url("images/breweries_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .breweries_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
@@ -1698,11 +1705,11 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("http://localhost:8888/stone_creek/wp-content/uploads/2017/11/foodcart_50.jpg");
+  background-image: url("images/foodcart_50.jpg");
 }
 /* line 23, scss/partials/_mixins.scss */
 .foodcart_50 img {
-  visibility: hiddem;
+  visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
