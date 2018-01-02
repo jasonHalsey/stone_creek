@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
 	cta_text();	
 	footer_col_height();
-	header_height() ;
+	// header_height() ;
 
 	jQuery("a[href='#bottom']").click(function() {
 	  jQuery("html, body").animate({ scrollTop: jQuery(document).height() }, "slow");
@@ -16,8 +16,9 @@ jQuery( window ).resize(function() {
 });
 
 jQuery( window ).load(function() {	
-  wrap_cta();
   header_height();
+  wrap_cta();
+  footer_col_height();
 });
 function cta_text() {
 	jQuery("#cta_row img").each(function() {
@@ -38,7 +39,9 @@ function header_height() {
 
 function footer_col_height() {
 	var last_col_height = jQuery('div.x-column.x-md.x-1-4:nth-child(2)').height();
-	var new_col_height = (last_col_height + 83);
+	console.log(last_col_height);
+	var new_col_height = (last_col_height + 52);
+	// var new_col_height = (last_col_height + 83);
 	
 
 	if (Modernizr.mq('only screen and (min-width: 1200px)')) {
