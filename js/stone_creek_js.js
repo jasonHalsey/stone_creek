@@ -35,6 +35,9 @@ function header_height() {
 	jQuery('div.el1.x-section.head_email_form').css('margin-top',header_height);
 	jQuery('div.el1.x-section.email_box').css('margin-top',header_height);
 	jQuery('#rev_slider_3_1_forcefullwidth').css('margin-top',header_height);
+	jQuery('.forcefullwidth_wrapper_tp_banner').css('margin-top',header_height);
+	
+	console.log('header_height = ' + header_height);
 }
 
 function footer_col_height() {

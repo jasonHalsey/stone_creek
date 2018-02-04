@@ -10,295 +10,6 @@ Template: x
 
 */
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
-/* line 4, scss/base/_buttons.scss */
-button, [type='button'], [type='reset'], [type='submit'] {
-  appearance: none;
-  background-color: #1565c0;
-  border: 0;
-  border-radius: 3px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 600;
-  line-height: 1;
-  padding: 0.75em 1.5em;
-  text-align: center;
-  text-decoration: none;
-  transition: background-color 150ms ease;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-}
-/* line 25, scss/base/_buttons.scss */
-button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover {
-  background-color: #11519a;
-  color: #fff;
-}
-/* line 30, scss/base/_buttons.scss */
-button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus {
-  outline: 3px solid rgba(21, 101, 192, 0.6);
-  outline-offset: 2px;
-}
-/* line 35, scss/base/_buttons.scss */
-button:disabled, [type='button']:disabled, [type='reset']:disabled, [type='submit']:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-/* line 39, scss/base/_buttons.scss */
-button:disabled:hover, [type='button']:disabled:hover, [type='reset']:disabled:hover, [type='submit']:disabled:hover {
-  background-color: #1565c0;
-}
-
-/* line 4, scss/base/_forms.scss */
-fieldset {
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 11, scss/base/_forms.scss */
-legend {
-  font-weight: 600;
-  margin-bottom: 0.375em;
-  padding: 0;
-}
-
-/* line 17, scss/base/_forms.scss */
-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.375em;
-}
-
-/* line 23, scss/base/_forms.scss */
-input,
-select,
-textarea {
-  display: block;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  font-size: 16px;
-}
-
-/* line 31, scss/base/_forms.scss */
-[type='color'], [type='date'], [type='datetime'], [type='datetime-local'], [type='email'], [type='month'], [type='number'], [type='password'], [type='search'], [type='tel'], [type='text'], [type='time'], [type='url'], [type='week'], input:not([type]), textarea {
-  appearance: none;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  box-sizing: border-box;
-  margin-bottom: 0.75em;
-  padding: 0.5em;
-  transition: border-color 150ms ease;
-  width: 100%;
-}
-/* line 43, scss/base/_forms.scss */
-[type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
-  border-color: #b1b1b1;
-}
-/* line 47, scss/base/_forms.scss */
-[type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
-  border-color: #1565c0;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(21, 101, 192, 0.7);
-  outline: none;
-}
-/* line 53, scss/base/_forms.scss */
-[type='color']:disabled, [type='date']:disabled, [type='datetime']:disabled, [type='datetime-local']:disabled, [type='email']:disabled, [type='month']:disabled, [type='number']:disabled, [type='password']:disabled, [type='search']:disabled, [type='tel']:disabled, [type='text']:disabled, [type='time']:disabled, [type='url']:disabled, [type='week']:disabled, input:not([type]):disabled, textarea:disabled {
-  background-color: #f2f2f2;
-  cursor: not-allowed;
-}
-/* line 57, scss/base/_forms.scss */
-[type='color']:disabled:hover, [type='date']:disabled:hover, [type='datetime']:disabled:hover, [type='datetime-local']:disabled:hover, [type='email']:disabled:hover, [type='month']:disabled:hover, [type='number']:disabled:hover, [type='password']:disabled:hover, [type='search']:disabled:hover, [type='tel']:disabled:hover, [type='text']:disabled:hover, [type='time']:disabled:hover, [type='url']:disabled:hover, [type='week']:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
-  border: 1px solid #ddd;
-}
-/* line 62, scss/base/_forms.scss */
-[type='color']::placeholder, [type='date']::placeholder, [type='datetime']::placeholder, [type='datetime-local']::placeholder, [type='email']::placeholder, [type='month']::placeholder, [type='number']::placeholder, [type='password']::placeholder, [type='search']::placeholder, [type='tel']::placeholder, [type='text']::placeholder, [type='time']::placeholder, [type='url']::placeholder, [type='week']::placeholder, input:not([type])::placeholder, textarea::placeholder {
-  color: #858585;
-}
-
-/* line 67, scss/base/_forms.scss */
-textarea {
-  resize: vertical;
-}
-
-/* line 71, scss/base/_forms.scss */
-[type="checkbox"],
-[type="radio"] {
-  display: inline;
-  margin-right: 0.375em;
-}
-
-/* line 77, scss/base/_forms.scss */
-[type="file"] {
-  margin-bottom: 0.75em;
-  width: 100%;
-}
-
-/* line 82, scss/base/_forms.scss */
-select {
-  margin-bottom: 0.75em;
-  width: 100%;
-}
-
-/* line 91, scss/base/_forms.scss */
-[type="checkbox"]:focus,
-[type="radio"]:focus,
-[type="file"]:focus,
-select:focus {
-  outline: 3px solid rgba(21, 101, 192, 0.6);
-  outline-offset: 2px;
-}
-
-/* line 1, scss/base/_layout.scss */
-html {
-  box-sizing: border-box;
-}
-
-/* line 5, scss/base/_layout.scss */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/* line 11, scss/base/_layout.scss */
-html,
-body {
-  height: 100%;
-}
-
-/* line 16, scss/base/_layout.scss */
-body {
-  margin: 0;
-}
-
-/* line 1, scss/base/_lists.scss */
-ul,
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 8, scss/base/_lists.scss */
-dl {
-  margin: 0;
-}
-
-/* line 12, scss/base/_lists.scss */
-dt {
-  font-weight: 600;
-  margin: 0;
-}
-
-/* line 17, scss/base/_lists.scss */
-dd {
-  margin: 0;
-}
-
-/* line 1, scss/base/_media.scss */
-figure {
-  margin: 0;
-}
-
-/* line 5, scss/base/_media.scss */
-img,
-picture {
-  margin: 0;
-  max-width: 100%;
-}
-
-/* line 1, scss/base/_tables.scss */
-table {
-  border-collapse: collapse;
-  margin: 1.5em 0;
-  table-layout: fixed;
-  text-align: left;
-  width: 100%;
-}
-
-/* line 9, scss/base/_tables.scss */
-thead {
-  line-height: 1.2;
-  vertical-align: bottom;
-}
-
-/* line 14, scss/base/_tables.scss */
-tbody {
-  vertical-align: top;
-}
-
-/* line 18, scss/base/_tables.scss */
-tr {
-  border-bottom: 1px solid #ddd;
-}
-
-/* line 22, scss/base/_tables.scss */
-th {
-  font-weight: 600;
-}
-
-/* line 26, scss/base/_tables.scss */
-th,
-td {
-  padding: 0.75em 0.75em 0.75em 0;
-}
-
-/* line 1, scss/base/_typography.scss */
-html {
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  font-size: 100%;
-  line-height: 1.5;
-}
-
-/* line 8, scss/base/_typography.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  font-size: 1.25em;
-  line-height: 1.2;
-  margin: 0 0 0.75em;
-}
-
-/* line 20, scss/base/_typography.scss */
-p {
-  margin: 0 0 0.75em;
-}
-
-/* line 24, scss/base/_typography.scss */
-a {
-  color: #1565c0;
-  text-decoration-skip: ink;
-  transition: color 150ms ease;
-}
-/* line 29, scss/base/_typography.scss */
-a:hover {
-  color: #104c90;
-}
-/* line 33, scss/base/_typography.scss */
-a:focus {
-  outline: 3px solid rgba(21, 101, 192, 0.6);
-  outline-offset: 2px;
-}
-
-/* line 39, scss/base/_typography.scss */
-hr {
-  border-bottom: 1px solid #ddd;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: 1.5em 0;
-}
-
 /* line 1, scss/partials/_global.scss */
 .x-container.offset {
   margin: 0px auto !important;
@@ -341,6 +52,13 @@ hr {
     vertical-align: inherit;
   }
 }
+/* line 36, scss/partials/_global.scss */
+body {
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
+}
+
 /* line 1, scss/partials/_footer.scss */
 footer .x-container.max {
   max-width: 1950px;
@@ -367,11 +85,11 @@ footer .x-container.max {
   font-family: 'Lato', sans-serif;
   font-size: 1.5em;
 }
-/* line 20, scss/bourbon/bourbon/library/_clearfix.scss */
-.x-colophon div.x-column.x-md.x-1-4::after {
-  clear: both;
+/* line 19, scss/partials/_mixins.scss */
+.x-colophon div.x-column.x-md.x-1-4:after {
   content: "";
-  display: block;
+  display: table;
+  clear: both;
 }
 @media all and (max-width: 1175px) {
   /* line 22, scss/partials/_footer.scss */
@@ -476,11 +194,11 @@ section.footer_contact {
   font-size: 1.15em;
   padding-right: 1.0em;
 }
-/* line 20, scss/bourbon/bourbon/library/_clearfix.scss */
-section.footer_contact::after {
-  clear: both;
+/* line 19, scss/partials/_mixins.scss */
+section.footer_contact:after {
   content: "";
-  display: block;
+  display: table;
+  clear: both;
 }
 /* line 102, scss/partials/_footer.scss */
 section.footer_contact .top_slice {
@@ -581,8 +299,14 @@ header .x-btn-navbar {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+@media all and (max-width: 500px) {
+  /* line 22, scss/partials/_home.scss */
+  header .x-btn-navbar {
+    margin-top: 0px;
+  }
+}
 
-/* line 28, scss/partials/_home.scss */
+/* line 31, scss/partials/_home.scss */
 #cta_row {
   max-width: 100%;
   min-width: 100%;
@@ -593,61 +317,61 @@ header .x-btn-navbar {
   background-color: #3C3b3b;
 }
 @media all and (max-width: 980px) {
-  /* line 28, scss/partials/_home.scss */
+  /* line 31, scss/partials/_home.scss */
   #cta_row {
     position: relative;
   }
 }
-/* line 39, scss/partials/_home.scss */
+/* line 42, scss/partials/_home.scss */
 #cta_row .x-column {
   margin-right: 0;
 }
-/* line 43, scss/partials/_home.scss */
+/* line 46, scss/partials/_home.scss */
 #cta_row .x-1-4 {
   width: 25%;
   height: auto;
 }
 @media all and (max-width: 980px) {
-  /* line 43, scss/partials/_home.scss */
+  /* line 46, scss/partials/_home.scss */
   #cta_row .x-1-4 {
     width: 100%;
     max-height: 100px;
   }
 }
-/* line 52, scss/partials/_home.scss */
+/* line 55, scss/partials/_home.scss */
 #cta_row .x-image {
   width: 100%;
   height: auto;
   display: block;
 }
-/* line 56, scss/partials/_home.scss */
+/* line 59, scss/partials/_home.scss */
 #cta_row .x-image img {
   width: 100%;
   height: auto;
   display: block;
 }
 @media all and (max-width: 980px) {
-  /* line 56, scss/partials/_home.scss */
+  /* line 59, scss/partials/_home.scss */
   #cta_row .x-image img {
     width: 100%;
   }
 }
 @media all and (max-width: 980px) {
-  /* line 52, scss/partials/_home.scss */
+  /* line 55, scss/partials/_home.scss */
   #cta_row .x-image {
     width: 100%;
     max-height: 100px;
     overflow: hidden;
   }
 }
-/* line 70, scss/partials/_home.scss */
+/* line 73, scss/partials/_home.scss */
 #cta_row .tint {
   position: relative;
   float: left;
   cursor: pointer;
   display: block;
 }
-/* line 77, scss/partials/_home.scss */
+/* line 80, scss/partials/_home.scss */
 #cta_row .tint:before {
   content: "";
   display: block;
@@ -662,23 +386,23 @@ header .x-btn-navbar {
   -o-transition: background .3s linear;
   transition: background .3s linear;
 }
-/* line 92, scss/partials/_home.scss */
+/* line 95, scss/partials/_home.scss */
 #cta_row .tint:hover:before {
   background: none;
   display: block;
 }
 
-/* line 98, scss/partials/_home.scss */
+/* line 101, scss/partials/_home.scss */
 #cta_row > div {
   width: 100% !important;
   max-width: 100% !important;
 }
-/* line 101, scss/partials/_home.scss */
+/* line 104, scss/partials/_home.scss */
 #cta_row > div .x-container.max {
   max-width: 100%;
 }
 
-/* line 108, scss/partials/_home.scss */
+/* line 111, scss/partials/_home.scss */
 span.img-caption {
   position: absolute;
   z-index: 777;
@@ -693,20 +417,20 @@ span.img-caption {
   padding: 0 1.0em;
 }
 @media all and (max-width: 1200px) {
-  /* line 108, scss/partials/_home.scss */
+  /* line 111, scss/partials/_home.scss */
   span.img-caption {
     font-size: 2.95em;
     padding: 0 0.5em;
   }
 }
 @media all and (max-width: 980px) {
-  /* line 108, scss/partials/_home.scss */
+  /* line 111, scss/partials/_home.scss */
   span.img-caption {
     font-size: 2.0em;
   }
 }
 
-/* line 131, scss/partials/_home.scss */
+/* line 134, scss/partials/_home.scss */
 div.x-section.email_box {
   position: absolute;
   z-index: 9999 !important;
@@ -717,19 +441,19 @@ div.x-section.email_box {
   border: 1px solid #3C3b3b;
   max-width: 380px;
 }
-/* line 140, scss/partials/_home.scss */
+/* line 143, scss/partials/_home.scss */
 div.x-section.email_box h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.0em;
 }
 @media all and (max-width: 1500px) {
-  /* line 131, scss/partials/_home.scss */
+  /* line 134, scss/partials/_home.scss */
   div.x-section.email_box {
     display: none;
   }
 }
 
-/* line 148, scss/partials/_home.scss */
+/* line 151, scss/partials/_home.scss */
 div.el1.x-section.head_email_form {
   background-color: rgba(255, 255, 255, 0.7) !important;
   position: absolute;
@@ -738,7 +462,7 @@ div.el1.x-section.head_email_form {
   z-index: 9999 !important;
   padding-top: 1.2em !important;
 }
-/* line 155, scss/partials/_home.scss */
+/* line 158, scss/partials/_home.scss */
 div.el1.x-section.head_email_form h2 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5em;
@@ -748,55 +472,55 @@ div.el1.x-section.head_email_form h2 {
   font-weight: 400;
 }
 @media all and (max-width: 860px) {
-  /* line 148, scss/partials/_home.scss */
+  /* line 151, scss/partials/_home.scss */
   div.el1.x-section.head_email_form {
     display: none;
   }
 }
 
 @media all and (max-width: 1025px) {
-  /* line 169, scss/partials/_home.scss */
+  /* line 172, scss/partials/_home.scss */
   body.home div.el1.x-section.head_email_form {
     display: none;
   }
 }
 @media all and (min-width: 1501px) {
-  /* line 169, scss/partials/_home.scss */
+  /* line 172, scss/partials/_home.scss */
   body.home div.el1.x-section.head_email_form {
     display: none;
   }
 }
 
-/* line 179, scss/partials/_home.scss */
+/* line 182, scss/partials/_home.scss */
 .head_form {
   width: 50%;
   float: right;
 }
-/* line 20, scss/bourbon/bourbon/library/_clearfix.scss */
-.head_form .tco-section::after {
-  clear: both;
+/* line 19, scss/partials/_mixins.scss */
+.head_form .tco-section:after {
   content: "";
-  display: block;
+  display: table;
+  clear: both;
 }
-/* line 186, scss/partials/_home.scss */
+/* line 189, scss/partials/_home.scss */
 .head_form .tco-subscribe-form {
   position: relative;
   float: right;
 }
-/* line 190, scss/partials/_home.scss */
+/* line 193, scss/partials/_home.scss */
 .head_form .tco-subscribe-form fieldset {
   padding: 0;
   margin: 0;
   border: 0;
   float: left;
 }
-/* line 196, scss/partials/_home.scss */
+/* line 199, scss/partials/_home.scss */
 .head_form .tco-subscribe-form label {
   margin: 0 0 0.375em;
   font-size: 0.65em;
   line-height: 1;
 }
-/* line 201, scss/partials/_home.scss */
+/* line 204, scss/partials/_home.scss */
 .head_form .tco-subscribe-form input[type="submit"] {
   display: inline-block;
   width: 100%;
@@ -804,43 +528,43 @@ div.el1.x-section.head_email_form h2 {
   font-size: inherit;
   margin-left: 1.0em;
 }
-/* line 208, scss/partials/_home.scss */
+/* line 211, scss/partials/_home.scss */
 .head_form .tco-subscribe-form .tco-subscribe-form-alert-wrap {
   margin-top: 4.25em;
   font-size: inherit;
 }
 
 @media all and (max-width: 1500px) {
-  /* line 214, scss/partials/_home.scss */
+  /* line 217, scss/partials/_home.scss */
   .home_head_form {
     width: 60%;
     float: right;
   }
-  /* line 20, scss/bourbon/bourbon/library/_clearfix.scss */
-  .home_head_form .tco-section::after {
-    clear: both;
+  /* line 19, scss/partials/_mixins.scss */
+  .home_head_form .tco-section:after {
     content: "";
-    display: block;
+    display: table;
+    clear: both;
   }
-  /* line 222, scss/partials/_home.scss */
+  /* line 225, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form {
     position: relative;
     float: right;
   }
-  /* line 226, scss/partials/_home.scss */
+  /* line 229, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form fieldset {
     padding: 0;
     margin: 0;
     border: 0;
     float: left;
   }
-  /* line 232, scss/partials/_home.scss */
+  /* line 235, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form label {
     margin: 0 0 0.375em;
     font-size: 0.65em;
     line-height: 1;
   }
-  /* line 237, scss/partials/_home.scss */
+  /* line 240, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form input[type="submit"] {
     display: inline-block;
     width: 100%;
@@ -848,14 +572,14 @@ div.el1.x-section.head_email_form h2 {
     font-size: inherit;
     margin-left: 1.0em;
   }
-  /* line 244, scss/partials/_home.scss */
+  /* line 247, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form .tco-subscribe-form-alert-wrap {
     margin-top: 4.25em;
     font-size: inherit;
   }
 }
 
-/* line 251, scss/partials/_home.scss */
+/* line 254, scss/partials/_home.scss */
 .x-btn, .button, [type="submit"] {
   color: #ffffff !important;
   background-color: #849b61 !important;
@@ -863,12 +587,12 @@ div.el1.x-section.head_email_form h2 {
   text-shadow: none !important;
   border-radius: 0 !important;
 }
-/* line 257, scss/partials/_home.scss */
+/* line 260, scss/partials/_home.scss */
 .x-btn:hover, .button:hover, [type="submit"]:hover {
   background-color: #658239 !important;
 }
 
-/* line 262, scss/partials/_home.scss */
+/* line 265, scss/partials/_home.scss */
 .head_form iframe {
   height: 96px;
 }
@@ -877,249 +601,255 @@ div.el1.x-section.head_email_form h2 {
 .rec_intro {
   background-color: #e9e6d7 !important;
 }
-/* line 3, scss/partials/_recreation.scss */
+@media all and (max-width: 600px) {
+  /* line 1, scss/partials/_recreation.scss */
+  .rec_intro {
+    padding: 34px 0px 40px 0px !important;
+  }
+}
+/* line 6, scss/partials/_recreation.scss */
 .rec_intro .sc_top_row {
   max-width: 1400px !important;
   margin: 0 auto !important;
 }
 
-/* line 8, scss/partials/_recreation.scss */
+/* line 11, scss/partials/_recreation.scss */
 .r_50_text {
   max-width: 970px;
   display: block;
   float: right;
   margin: 3.0em 6.0em;
 }
-/* line 37, scss/partials/_mixins.scss */
+/* line 45, scss/partials/_mixins.scss */
 .r_50_text p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 1.75;
   color: #000;
 }
-/* line 43, scss/partials/_mixins.scss */
+/* line 51, scss/partials/_mixins.scss */
 .r_50_text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 49, scss/partials/_mixins.scss */
+/* line 57, scss/partials/_mixins.scss */
 .r_50_text ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 54, scss/partials/_mixins.scss */
+/* line 62, scss/partials/_mixins.scss */
 .r_50_text ul li:last-child {
   font-weight: 600;
 }
 @media all and (max-width: 900px) {
-  /* line 8, scss/partials/_recreation.scss */
+  /* line 11, scss/partials/_recreation.scss */
   .r_50_text {
     float: none;
     margin: 3.0em 2.0em;
   }
 }
 
-/* line 11, scss/partials/_recreation.scss */
+/* line 14, scss/partials/_recreation.scss */
 .l_50_text {
   max-width: 970px;
   display: block;
   float: left;
   margin: 3.0em 6.0em;
 }
-/* line 70, scss/partials/_mixins.scss */
+/* line 78, scss/partials/_mixins.scss */
 .l_50_text p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 2.0;
   color: #000;
 }
-/* line 76, scss/partials/_mixins.scss */
+/* line 84, scss/partials/_mixins.scss */
 .l_50_text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 82, scss/partials/_mixins.scss */
+/* line 90, scss/partials/_mixins.scss */
 .l_50_text ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 87, scss/partials/_mixins.scss */
+/* line 95, scss/partials/_mixins.scss */
 .l_50_text ul li:last-child {
   font-weight: 600;
 }
 @media all and (max-width: 900px) {
-  /* line 11, scss/partials/_recreation.scss */
+  /* line 14, scss/partials/_recreation.scss */
   .l_50_text {
     float: none;
     margin: 3.0em 2.0em;
   }
 }
 
-/* line 15, scss/partials/_recreation.scss */
+/* line 18, scss/partials/_recreation.scss */
 .old_mill_50 {
   margin: 0px;
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/old_mill_50.jpg");
+  background-image: url("images/OldMill_Pg3.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .old_mill_50 img {
   visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 15, scss/partials/_recreation.scss */
+  /* line 18, scss/partials/_recreation.scss */
   .old_mill_50 {
     opacity: 1;
   }
 }
 
-/* line 20, scss/partials/_recreation.scss */
+/* line 23, scss/partials/_recreation.scss */
 .downtown_50 {
   margin: 0px;
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/downtown_50.jpg");
+  background-image: url("images/TowerTheater_Pg8.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .downtown_50 img {
   visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 20, scss/partials/_recreation.scss */
+  /* line 23, scss/partials/_recreation.scss */
   .downtown_50 {
     opacity: 1;
   }
 }
 
-/* line 25, scss/partials/_recreation.scss */
+/* line 28, scss/partials/_recreation.scss */
 .mountainbike_50 {
   margin: 0px;
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/mountainbiking_50.jpg");
+  background-image: url("images/Bike_Pg17.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .mountainbike_50 img {
   visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 25, scss/partials/_recreation.scss */
+  /* line 28, scss/partials/_recreation.scss */
   .mountainbike_50 {
     opacity: 1;
   }
 }
 
-/* line 30, scss/partials/_recreation.scss */
+/* line 33, scss/partials/_recreation.scss */
 .hiking_50 {
   margin: 0px;
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/smith_rock_50.jpg");
+  background-image: url("images/SmithRock_Pg19.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .hiking_50 img {
   visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 30, scss/partials/_recreation.scss */
+  /* line 33, scss/partials/_recreation.scss */
   .hiking_50 {
     opacity: 1;
   }
 }
 
-/* line 35, scss/partials/_recreation.scss */
+/* line 38, scss/partials/_recreation.scss */
 .skiing_50 {
   margin: 0px;
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/slkiing_50.jpg");
+  background-image: url("images/Snowboard_Pg20.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .skiing_50 img {
   visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 35, scss/partials/_recreation.scss */
+  /* line 38, scss/partials/_recreation.scss */
   .skiing_50 {
     opacity: 1;
   }
 }
 
-/* line 40, scss/partials/_recreation.scss */
+/* line 43, scss/partials/_recreation.scss */
 .fishing_50 {
   margin: 0px;
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/fly_fishing_50.jpg");
+  background-image: url("images/FlyFish_Pg21.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .fishing_50 img {
   visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 40, scss/partials/_recreation.scss */
+  /* line 43, scss/partials/_recreation.scss */
   .fishing_50 {
     opacity: 1;
   }
 }
 
-/* line 45, scss/partials/_recreation.scss */
+/* line 48, scss/partials/_recreation.scss */
 .golfing_50 {
   margin: 0px;
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/golfing_50.jpg");
+  background-image: url("images/Golf_Pg22.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .golfing_50 img {
   visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 45, scss/partials/_recreation.scss */
+  /* line 48, scss/partials/_recreation.scss */
   .golfing_50 {
     opacity: 1;
   }
 }
 
-/* line 50, scss/partials/_recreation.scss */
+/* line 53, scss/partials/_recreation.scss */
 .vt_cta {
   background-color: #e9e6d7 !important;
   position: relative;
 }
-/* line 54, scss/partials/_recreation.scss */
+/* line 57, scss/partials/_recreation.scss */
 .vt_cta .x-container.width {
   width: 100%;
 }
-/* line 57, scss/partials/_recreation.scss */
+/* line 60, scss/partials/_recreation.scss */
 .vt_cta .x-column {
   padding: 0 !important;
 }
-/* line 60, scss/partials/_recreation.scss */
+/* line 63, scss/partials/_recreation.scss */
 .vt_cta .x-2-3 {
   margin-right: 0;
   padding: 0 !important;
 }
-/* line 64, scss/partials/_recreation.scss */
+/* line 67, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 {
   position: absolute;
   top: 50%;
@@ -1127,19 +857,19 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   text-align: center;
 }
-/* line 70, scss/partials/_recreation.scss */
+/* line 73, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 h2 {
   font-family: 'Playfair Display', serif;
   font-size: 4.15em;
   color: #4d4d4f;
 }
 @media all and (max-width: 900px) {
-  /* line 70, scss/partials/_recreation.scss */
+  /* line 73, scss/partials/_recreation.scss */
   .vt_cta .vt_col_1 h2 {
     font-size: 2.0em;
   }
 }
-/* line 78, scss/partials/_recreation.scss */
+/* line 81, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 a {
   display: block;
   background-color: #849b61;
@@ -1155,17 +885,17 @@ div.el1.x-section.head_email_form h2 {
   -o-transition: background-color .3s linear;
   transition: background-color .3s linear;
 }
-/* line 92, scss/partials/_recreation.scss */
+/* line 95, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 a:hover {
   background-color: #658239;
 }
-/* line 97, scss/partials/_recreation.scss */
+/* line 100, scss/partials/_recreation.scss */
 .vt_cta .cta_vt {
   text-align: center;
   display: block;
   min-height: 200px;
 }
-/* line 102, scss/partials/_recreation.scss */
+/* line 105, scss/partials/_recreation.scss */
 .vt_cta .x-image img {
   width: 100%;
 }
@@ -1183,7 +913,7 @@ div.el1.x-section.head_email_form h2 {
   background-position: 50%;
   background-image: url("images/onyx.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .onyx_50 img {
   visibility: hidden;
   opacity: 0;
@@ -1203,7 +933,7 @@ div.el1.x-section.head_email_form h2 {
   background-position: 50%;
   background-image: url("images/sapphire.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .sapphire_50 img {
   visibility: hidden;
   opacity: 0;
@@ -1223,7 +953,7 @@ div.el1.x-section.head_email_form h2 {
   background-position: 50%;
   background-image: url("images/ruby.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .ruby_50 img {
   visibility: hidden;
   opacity: 0;
@@ -1243,7 +973,7 @@ div.el1.x-section.head_email_form h2 {
   background-position: 50%;
   background-image: url("images/gernet.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .garnet_50 img {
   visibility: hidden;
   opacity: 0;
@@ -1263,7 +993,7 @@ div.el1.x-section.head_email_form h2 {
   background-position: 50%;
   background-image: url("images/emerald.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .emerald_50 img {
   visibility: hidden;
   opacity: 0;
@@ -1283,27 +1013,27 @@ div.el1.x-section.head_email_form h2 {
   margin: 3.0em 6.0em;
   max-width: 768px;
 }
-/* line 37, scss/partials/_mixins.scss */
+/* line 45, scss/partials/_mixins.scss */
 .r_50_text_sm p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 1.75;
   color: #000;
 }
-/* line 43, scss/partials/_mixins.scss */
+/* line 51, scss/partials/_mixins.scss */
 .r_50_text_sm h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 49, scss/partials/_mixins.scss */
+/* line 57, scss/partials/_mixins.scss */
 .r_50_text_sm ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 54, scss/partials/_mixins.scss */
+/* line 62, scss/partials/_mixins.scss */
 .r_50_text_sm ul li:last-child {
   font-weight: 600;
 }
@@ -1323,27 +1053,27 @@ div.el1.x-section.head_email_form h2 {
   margin: 3.0em 6.0em;
   max-width: 768px;
 }
-/* line 70, scss/partials/_mixins.scss */
+/* line 78, scss/partials/_mixins.scss */
 .l_50_text_sm p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 2.0;
   color: #000;
 }
-/* line 76, scss/partials/_mixins.scss */
+/* line 84, scss/partials/_mixins.scss */
 .l_50_text_sm h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 82, scss/partials/_mixins.scss */
+/* line 90, scss/partials/_mixins.scss */
 .l_50_text_sm ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 87, scss/partials/_mixins.scss */
+/* line 95, scss/partials/_mixins.scss */
 .l_50_text_sm ul li:last-child {
   font-weight: 600;
 }
@@ -1384,10 +1114,12 @@ a.available:before {
   /* line 36, scss/partials/_sc_homes.scss */
   a.available {
     font-size: 18px;
+    width: 100%;
+    height: 3.0em;
   }
 }
 
-/* line 61, scss/partials/_sc_homes.scss */
+/* line 63, scss/partials/_sc_homes.scss */
 a.more {
   color: #000;
   display: block;
@@ -1399,11 +1131,11 @@ a.more {
   -o-transition: color .3s linear;
   transition: color .3s linear;
 }
-/* line 71, scss/partials/_sc_homes.scss */
+/* line 73, scss/partials/_sc_homes.scss */
 a.more:hover {
   color: #849b61;
 }
-/* line 74, scss/partials/_sc_homes.scss */
+/* line 76, scss/partials/_sc_homes.scss */
 a.more:before {
   content: "";
   float: left;
@@ -1413,15 +1145,17 @@ a.more:before {
   background: url(images/housing_icon.png);
 }
 @media all and (max-width: 900px) {
-  /* line 61, scss/partials/_sc_homes.scss */
+  /* line 63, scss/partials/_sc_homes.scss */
   a.more {
     font-size: 18px;
+    width: 100%;
+    height: 3.0em;
   }
 }
 
 /* line 1, scss/partials/_living.scss */
 .working_row {
-  background-image: url("images/working_bg.jpg");
+  background-image: url("images/ReedMarket_Pg15.jpg");
   margin: 0px;
   width: 100%;
   background-size: cover;
@@ -1439,27 +1173,27 @@ a.more:before {
   max-width: 800px;
   margin: 5em 8em 10em 11em !important;
 }
-/* line 70, scss/partials/_mixins.scss */
+/* line 78, scss/partials/_mixins.scss */
 .working_row .l_50_text p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 2.0;
   color: #000;
 }
-/* line 76, scss/partials/_mixins.scss */
+/* line 84, scss/partials/_mixins.scss */
 .working_row .l_50_text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 82, scss/partials/_mixins.scss */
+/* line 90, scss/partials/_mixins.scss */
 .working_row .l_50_text ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 87, scss/partials/_mixins.scss */
+/* line 95, scss/partials/_mixins.scss */
 .working_row .l_50_text ul li:last-child {
   font-weight: 600;
 }
@@ -1470,16 +1204,22 @@ a.more:before {
     margin: 3.0em 2.0em;
   }
 }
-/* line 14, scss/partials/_living.scss */
+@media all and (max-width: 600px) {
+  /* line 10, scss/partials/_living.scss */
+  .working_row .l_50_text {
+    margin: 2em 2em 2em 2em !important;
+  }
+}
+/* line 17, scss/partials/_living.scss */
 .working_row .l_50_text p {
   color: #ffffff !important;
 }
-/* line 17, scss/partials/_living.scss */
+/* line 20, scss/partials/_living.scss */
 .working_row .l_50_text h2 {
   color: #ffffff !important;
 }
 
-/* line 22, scss/partials/_living.scss */
+/* line 25, scss/partials/_living.scss */
 .schools_row {
   background-image: url("images/schools.jpg");
   margin: 0px;
@@ -1490,7 +1230,7 @@ a.more:before {
   min-height: 400px;
   height: 100%;
 }
-/* line 31, scss/partials/_living.scss */
+/* line 34, scss/partials/_living.scss */
 .schools_row .l_50_text {
   max-width: 970px;
   display: block;
@@ -1499,67 +1239,73 @@ a.more:before {
   max-width: 800px;
   margin: 5em 8em 10em 11em !important;
 }
-/* line 70, scss/partials/_mixins.scss */
+/* line 78, scss/partials/_mixins.scss */
 .schools_row .l_50_text p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 2.0;
   color: #000;
 }
-/* line 76, scss/partials/_mixins.scss */
+/* line 84, scss/partials/_mixins.scss */
 .schools_row .l_50_text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 82, scss/partials/_mixins.scss */
+/* line 90, scss/partials/_mixins.scss */
 .schools_row .l_50_text ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 87, scss/partials/_mixins.scss */
+/* line 95, scss/partials/_mixins.scss */
 .schools_row .l_50_text ul li:last-child {
   font-weight: 600;
 }
 @media all and (max-width: 900px) {
-  /* line 31, scss/partials/_living.scss */
+  /* line 34, scss/partials/_living.scss */
   .schools_row .l_50_text {
     float: none;
     margin: 3.0em 2.0em;
   }
 }
-/* line 35, scss/partials/_living.scss */
+@media all and (max-width: 600px) {
+  /* line 34, scss/partials/_living.scss */
+  .schools_row .l_50_text {
+    margin: 2em 2em 2em 2em !important;
+  }
+}
+/* line 41, scss/partials/_living.scss */
 .schools_row .l_50_text p {
   color: #ffffff !important;
 }
-/* line 38, scss/partials/_living.scss */
+/* line 44, scss/partials/_living.scss */
 .schools_row .l_50_text h2 {
   color: #ffffff !important;
 }
 
-/* line 44, scss/partials/_living.scss */
+/* line 50, scss/partials/_living.scss */
 .shopping_50 {
   margin: 0px;
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/shopping.jpg");
+  background-image: url("images/StoreFront_Pg16.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .shopping_50 img {
   visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 44, scss/partials/_living.scss */
+  /* line 50, scss/partials/_living.scss */
   .shopping_50 {
     opacity: 1;
   }
 }
 
-/* line 49, scss/partials/_living.scss */
+/* line 55, scss/partials/_living.scss */
 .airport_50 {
   margin: 0px;
   width: 100%;
@@ -1567,13 +1313,13 @@ a.more:before {
   background-position: 50%;
   background-image: url("images/airport_50.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .airport_50 img {
   visibility: hidden;
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 49, scss/partials/_living.scss */
+  /* line 55, scss/partials/_living.scss */
   .airport_50 {
     opacity: 1;
   }
@@ -1605,9 +1351,9 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/fall_fest_50.jpg");
+  background-image: url("images/Hike_Pg7.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .fall_50 img {
   visibility: hidden;
   opacity: 0;
@@ -1625,9 +1371,9 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/winter_50.jpg");
+  background-image: url("images/Ski_Pg9.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .winter_50 img {
   visibility: hidden;
   opacity: 0;
@@ -1645,9 +1391,9 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/summer_50.jpg");
+  background-image: url("images/Kayack_Pg10.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .summer_50 img {
   visibility: hidden;
   opacity: 0;
@@ -1665,9 +1411,9 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/drake_50.jpg");
+  background-image: url("images/DrakePark_Pg11.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .drake_50 img {
   visibility: hidden;
   opacity: 0;
@@ -1685,9 +1431,9 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/breweries_50.jpg");
+  background-image: url("images/Deschutes_Pg12.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .breweries_50 img {
   visibility: hidden;
   opacity: 0;
@@ -1705,9 +1451,9 @@ a.more:before {
   width: 100%;
   background-size: cover;
   background-position: 50%;
-  background-image: url("images/foodcart_50.jpg");
+  background-image: url("images/FoodCart_Pg13.jpg");
 }
-/* line 23, scss/partials/_mixins.scss */
+/* line 31, scss/partials/_mixins.scss */
 .foodcart_50 img {
   visibility: hidden;
   opacity: 0;
@@ -1715,6 +1461,26 @@ a.more:before {
 @media all and (max-width: 900px) {
   /* line 21, scss/partials/_bend.scss */
   .foodcart_50 {
+    opacity: 1;
+  }
+}
+
+/* line 25, scss/partials/_bend.scss */
+.downtown_50 {
+  margin: 0px;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-image: url("images/TowerTheater_Pg8.jpg");
+}
+/* line 31, scss/partials/_mixins.scss */
+.downtown_50 img {
+  visibility: hidden;
+  opacity: 0;
+}
+@media all and (max-width: 900px) {
+  /* line 25, scss/partials/_bend.scss */
+  .downtown_50 {
     opacity: 1;
   }
 }
@@ -1763,21 +1529,28 @@ a.more:before {
 .neighborhood_content .neighborhood_links {
   padding-right: 12.0em;
 }
-/* line 27, scss/partials/_franklin_bros.scss */
+@media all and (max-width: 400px) {
+  /* line 25, scss/partials/_franklin_bros.scss */
+  .neighborhood_content .neighborhood_links {
+    padding-right: 0;
+  }
+}
+/* line 30, scss/partials/_franklin_bros.scss */
 .neighborhood_content .neighborhood_links ul {
   margin-bottom: 2.0em;
+  list-style: none;
 }
-/* line 31, scss/partials/_franklin_bros.scss */
+/* line 35, scss/partials/_franklin_bros.scss */
 .neighborhood_content .neighborhood_links .menu_image img {
   width: 25%;
   height: auto;
 }
 
-/* line 39, scss/partials/_franklin_bros.scss */
+/* line 43, scss/partials/_franklin_bros.scss */
 .franklin_intro {
   background-color: #e9e6d7 !important;
 }
-/* line 41, scss/partials/_franklin_bros.scss */
+/* line 45, scss/partials/_franklin_bros.scss */
 .franklin_intro div.sc_top_row {
   max-width: 1400px !important;
 }

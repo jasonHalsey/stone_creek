@@ -56,6 +56,8 @@ a.available{
 	}
 	@media all and (max-width: 900px) {
 		font-size: 18px;
+	    width: 100%;
+	    height: 3.0em;
 	}
 }
 a.more{
@@ -81,5 +83,7 @@ a.more{
 	}
 	@media all and (max-width: 900px) {
 		font-size: 18px;
+		width: 100%;
+	    height: 3.0em;
 	}
 }

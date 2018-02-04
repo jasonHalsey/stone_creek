@@ -1,5 +1,8 @@
 .rec_intro{
 	background-color: $tan!important;
+	@media all and (max-width: 600px) {
+		padding: 34px 0px 40px 0px!important;
+	}
 	.sc_top_row{
 		max-width: 1400px!important;
 		margin: 0 auto!important;
@@ -14,37 +17,37 @@
 
 .old_mill_50{
 	@include img_half;
-	background-image: url('images/old_mill_50.jpg');
+	background-image: url('images/OldMill_Pg3.jpg');
 }
 
 .downtown_50{
 	@include img_half;
-    background-image: url('images/downtown_50.jpg');
+    background-image: url('images/TowerTheater_Pg8.jpg');
 }
 
 .mountainbike_50{
 	@include img_half;
-	background-image: url('images/mountainbiking_50.jpg');
+	background-image: url('images/Bike_Pg17.jpg');
 }
 
 .hiking_50{
 	@include img_half;
-	background-image: url('images/smith_rock_50.jpg');
+	background-image: url('images/SmithRock_Pg19.jpg');
 }
 
 .skiing_50{
 	@include img_half;
-	background-image: url('images/slkiing_50.jpg');
+	background-image: url('images/Snowboard_Pg20.jpg');
 }
 
 .fishing_50{
 	@include img_half;
-	background-image: url('images/fly_fishing_50.jpg');
+	background-image: url('images/FlyFish_Pg21.jpg');
 }
 
 .golfing_50{
 	@include img_half;
-	background-image: url('images/golfing_50.jpg');
+	background-image: url('images/Golf_Pg22.jpg');
 }
 
 .vt_cta{

@@ -1,24 +1,28 @@
 .fall_50{
 	@include img_half;
-	background-image: url('images/fall_fest_50.jpg');
+	background-image: url('images/Hike_Pg7.jpg');
 }
 .winter_50{
 	@include img_half;
-	background-image: url('images/winter_50.jpg');
+	background-image: url('images/Ski_Pg9.jpg');
 }
 .summer_50{
 	@include img_half;
-	background-image: url('images/summer_50.jpg');
+	background-image: url('images/Kayack_Pg10.jpg');
 }
 .drake_50{
 	@include img_half;
-	background-image: url('images/drake_50.jpg');
+	background-image: url('images/DrakePark_Pg11.jpg');
 }
 .breweries_50{
 	@include img_half;
-	background-image: url('images/breweries_50.jpg');
+	background-image: url('images/Deschutes_Pg12.jpg');
 }
 .foodcart_50{
 	@include img_half;
-	background-image: url('images/foodcart_50.jpg');
+	background-image: url('images/FoodCart_Pg13.jpg');
+}
+.downtown_50{
+	@include img_half;
+	background-image: url('images/TowerTheater_Pg8.jpg');
 }

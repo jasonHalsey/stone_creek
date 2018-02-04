@@ -22,6 +22,9 @@ header{
 	.x-btn-navbar {
 	    margin-top: 20px;
 	    margin-bottom: 20px;
+	    @media all and (max-width: 500px) {
+	    	margin-top: 0px;
+	    }
 	}
 }
 

@@ -24,8 +24,12 @@
 	}
 	.neighborhood_links{
 		padding-right:12.0em;
+		@media all and (max-width: 400px) {
+			padding-right:0;
+		}
 		ul{
 			margin-bottom: 2.0em;
+			list-style: none;
 		}
 		.menu_image{
 			img{
