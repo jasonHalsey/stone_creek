@@ -287,26 +287,32 @@ header .x-container img {
 @media all and (max-width: 400px) {
   /* line 11, scss/partials/_home.scss */
   header .x-container img {
-    max-width: 320px;
+    max-width: 250px;
   }
 }
 /* line 19, scss/partials/_home.scss */
 header .x-brand {
   margin-top: 13px;
 }
-/* line 22, scss/partials/_home.scss */
+@media all and (max-width: 400px) {
+  /* line 19, scss/partials/_home.scss */
+  header .x-brand {
+    margin-top: 22px;
+  }
+}
+/* line 25, scss/partials/_home.scss */
 header .x-btn-navbar {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 @media all and (max-width: 500px) {
-  /* line 22, scss/partials/_home.scss */
+  /* line 25, scss/partials/_home.scss */
   header .x-btn-navbar {
-    margin-top: 0px;
+    margin-top: 20px;
   }
 }
 
-/* line 31, scss/partials/_home.scss */
+/* line 34, scss/partials/_home.scss */
 #cta_row {
   max-width: 100%;
   min-width: 100%;
@@ -317,61 +323,61 @@ header .x-btn-navbar {
   background-color: #3C3b3b;
 }
 @media all and (max-width: 980px) {
-  /* line 31, scss/partials/_home.scss */
+  /* line 34, scss/partials/_home.scss */
   #cta_row {
     position: relative;
   }
 }
-/* line 42, scss/partials/_home.scss */
+/* line 45, scss/partials/_home.scss */
 #cta_row .x-column {
   margin-right: 0;
 }
-/* line 46, scss/partials/_home.scss */
+/* line 49, scss/partials/_home.scss */
 #cta_row .x-1-4 {
   width: 25%;
   height: auto;
 }
 @media all and (max-width: 980px) {
-  /* line 46, scss/partials/_home.scss */
+  /* line 49, scss/partials/_home.scss */
   #cta_row .x-1-4 {
     width: 100%;
     max-height: 100px;
   }
 }
-/* line 55, scss/partials/_home.scss */
+/* line 58, scss/partials/_home.scss */
 #cta_row .x-image {
   width: 100%;
   height: auto;
   display: block;
 }
-/* line 59, scss/partials/_home.scss */
+/* line 62, scss/partials/_home.scss */
 #cta_row .x-image img {
   width: 100%;
   height: auto;
   display: block;
 }
 @media all and (max-width: 980px) {
-  /* line 59, scss/partials/_home.scss */
+  /* line 62, scss/partials/_home.scss */
   #cta_row .x-image img {
     width: 100%;
   }
 }
 @media all and (max-width: 980px) {
-  /* line 55, scss/partials/_home.scss */
+  /* line 58, scss/partials/_home.scss */
   #cta_row .x-image {
     width: 100%;
     max-height: 100px;
     overflow: hidden;
   }
 }
-/* line 73, scss/partials/_home.scss */
+/* line 76, scss/partials/_home.scss */
 #cta_row .tint {
   position: relative;
   float: left;
   cursor: pointer;
   display: block;
 }
-/* line 80, scss/partials/_home.scss */
+/* line 83, scss/partials/_home.scss */
 #cta_row .tint:before {
   content: "";
   display: block;
@@ -386,23 +392,23 @@ header .x-btn-navbar {
   -o-transition: background .3s linear;
   transition: background .3s linear;
 }
-/* line 95, scss/partials/_home.scss */
+/* line 98, scss/partials/_home.scss */
 #cta_row .tint:hover:before {
   background: none;
   display: block;
 }
 
-/* line 101, scss/partials/_home.scss */
+/* line 104, scss/partials/_home.scss */
 #cta_row > div {
   width: 100% !important;
   max-width: 100% !important;
 }
-/* line 104, scss/partials/_home.scss */
+/* line 107, scss/partials/_home.scss */
 #cta_row > div .x-container.max {
   max-width: 100%;
 }
 
-/* line 111, scss/partials/_home.scss */
+/* line 114, scss/partials/_home.scss */
 span.img-caption {
   position: absolute;
   z-index: 777;
@@ -417,20 +423,20 @@ span.img-caption {
   padding: 0 1.0em;
 }
 @media all and (max-width: 1200px) {
-  /* line 111, scss/partials/_home.scss */
+  /* line 114, scss/partials/_home.scss */
   span.img-caption {
     font-size: 2.95em;
     padding: 0 0.5em;
   }
 }
 @media all and (max-width: 980px) {
-  /* line 111, scss/partials/_home.scss */
+  /* line 114, scss/partials/_home.scss */
   span.img-caption {
     font-size: 2.0em;
   }
 }
 
-/* line 134, scss/partials/_home.scss */
+/* line 137, scss/partials/_home.scss */
 div.x-section.email_box {
   position: absolute;
   z-index: 9999 !important;
@@ -441,19 +447,19 @@ div.x-section.email_box {
   border: 1px solid #3C3b3b;
   max-width: 380px;
 }
-/* line 143, scss/partials/_home.scss */
+/* line 146, scss/partials/_home.scss */
 div.x-section.email_box h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.0em;
 }
 @media all and (max-width: 1500px) {
-  /* line 134, scss/partials/_home.scss */
+  /* line 137, scss/partials/_home.scss */
   div.x-section.email_box {
     display: none;
   }
 }
 
-/* line 151, scss/partials/_home.scss */
+/* line 154, scss/partials/_home.scss */
 div.el1.x-section.head_email_form {
   background-color: rgba(255, 255, 255, 0.7) !important;
   position: absolute;
@@ -462,7 +468,7 @@ div.el1.x-section.head_email_form {
   z-index: 9999 !important;
   padding-top: 1.2em !important;
 }
-/* line 158, scss/partials/_home.scss */
+/* line 161, scss/partials/_home.scss */
 div.el1.x-section.head_email_form h2 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5em;
@@ -472,26 +478,26 @@ div.el1.x-section.head_email_form h2 {
   font-weight: 400;
 }
 @media all and (max-width: 860px) {
-  /* line 151, scss/partials/_home.scss */
+  /* line 154, scss/partials/_home.scss */
   div.el1.x-section.head_email_form {
     display: none;
   }
 }
 
 @media all and (max-width: 1025px) {
-  /* line 172, scss/partials/_home.scss */
+  /* line 175, scss/partials/_home.scss */
   body.home div.el1.x-section.head_email_form {
     display: none;
   }
 }
 @media all and (min-width: 1501px) {
-  /* line 172, scss/partials/_home.scss */
+  /* line 175, scss/partials/_home.scss */
   body.home div.el1.x-section.head_email_form {
     display: none;
   }
 }
 
-/* line 182, scss/partials/_home.scss */
+/* line 185, scss/partials/_home.scss */
 .head_form {
   width: 50%;
   float: right;
@@ -502,25 +508,25 @@ div.el1.x-section.head_email_form h2 {
   display: table;
   clear: both;
 }
-/* line 189, scss/partials/_home.scss */
+/* line 192, scss/partials/_home.scss */
 .head_form .tco-subscribe-form {
   position: relative;
   float: right;
 }
-/* line 193, scss/partials/_home.scss */
+/* line 196, scss/partials/_home.scss */
 .head_form .tco-subscribe-form fieldset {
   padding: 0;
   margin: 0;
   border: 0;
   float: left;
 }
-/* line 199, scss/partials/_home.scss */
+/* line 202, scss/partials/_home.scss */
 .head_form .tco-subscribe-form label {
   margin: 0 0 0.375em;
   font-size: 0.65em;
   line-height: 1;
 }
-/* line 204, scss/partials/_home.scss */
+/* line 207, scss/partials/_home.scss */
 .head_form .tco-subscribe-form input[type="submit"] {
   display: inline-block;
   width: 100%;
@@ -528,14 +534,14 @@ div.el1.x-section.head_email_form h2 {
   font-size: inherit;
   margin-left: 1.0em;
 }
-/* line 211, scss/partials/_home.scss */
+/* line 214, scss/partials/_home.scss */
 .head_form .tco-subscribe-form .tco-subscribe-form-alert-wrap {
   margin-top: 4.25em;
   font-size: inherit;
 }
 
 @media all and (max-width: 1500px) {
-  /* line 217, scss/partials/_home.scss */
+  /* line 220, scss/partials/_home.scss */
   .home_head_form {
     width: 60%;
     float: right;
@@ -546,25 +552,25 @@ div.el1.x-section.head_email_form h2 {
     display: table;
     clear: both;
   }
-  /* line 225, scss/partials/_home.scss */
+  /* line 228, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form {
     position: relative;
     float: right;
   }
-  /* line 229, scss/partials/_home.scss */
+  /* line 232, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form fieldset {
     padding: 0;
     margin: 0;
     border: 0;
     float: left;
   }
-  /* line 235, scss/partials/_home.scss */
+  /* line 238, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form label {
     margin: 0 0 0.375em;
     font-size: 0.65em;
     line-height: 1;
   }
-  /* line 240, scss/partials/_home.scss */
+  /* line 243, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form input[type="submit"] {
     display: inline-block;
     width: 100%;
@@ -572,14 +578,14 @@ div.el1.x-section.head_email_form h2 {
     font-size: inherit;
     margin-left: 1.0em;
   }
-  /* line 247, scss/partials/_home.scss */
+  /* line 250, scss/partials/_home.scss */
   .home_head_form .tco-subscribe-form .tco-subscribe-form-alert-wrap {
     margin-top: 4.25em;
     font-size: inherit;
   }
 }
 
-/* line 254, scss/partials/_home.scss */
+/* line 257, scss/partials/_home.scss */
 .x-btn, .button, [type="submit"] {
   color: #ffffff !important;
   background-color: #849b61 !important;
@@ -587,12 +593,12 @@ div.el1.x-section.head_email_form h2 {
   text-shadow: none !important;
   border-radius: 0 !important;
 }
-/* line 260, scss/partials/_home.scss */
+/* line 263, scss/partials/_home.scss */
 .x-btn:hover, .button:hover, [type="submit"]:hover {
   background-color: #658239 !important;
 }
 
-/* line 265, scss/partials/_home.scss */
+/* line 268, scss/partials/_home.scss */
 .head_form iframe {
   height: 96px;
 }
@@ -632,15 +638,16 @@ div.el1.x-section.head_email_form h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
+  margin: 0.5em 0 0.2em;
 }
-/* line 57, scss/partials/_mixins.scss */
+/* line 58, scss/partials/_mixins.scss */
 .r_50_text ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 62, scss/partials/_mixins.scss */
+/* line 63, scss/partials/_mixins.scss */
 .r_50_text ul li:last-child {
   font-weight: 600;
 }
@@ -651,47 +658,57 @@ div.el1.x-section.head_email_form h2 {
     margin: 3.0em 2.0em;
   }
 }
+@media all and (max-width: 500px) {
+  /* line 11, scss/partials/_recreation.scss */
+  .r_50_text {
+    margin: 0.5em 2.0em;
+  }
+  /* line 15, scss/partials/_recreation.scss */
+  .r_50_text h2 {
+    margin-top: 0em !important;
+  }
+}
 
-/* line 14, scss/partials/_recreation.scss */
+/* line 20, scss/partials/_recreation.scss */
 .l_50_text {
   max-width: 970px;
   display: block;
   float: left;
   margin: 3.0em 6.0em;
 }
-/* line 78, scss/partials/_mixins.scss */
+/* line 79, scss/partials/_mixins.scss */
 .l_50_text p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 2.0;
   color: #000;
 }
-/* line 84, scss/partials/_mixins.scss */
+/* line 85, scss/partials/_mixins.scss */
 .l_50_text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 90, scss/partials/_mixins.scss */
+/* line 91, scss/partials/_mixins.scss */
 .l_50_text ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 95, scss/partials/_mixins.scss */
+/* line 96, scss/partials/_mixins.scss */
 .l_50_text ul li:last-child {
   font-weight: 600;
 }
 @media all and (max-width: 900px) {
-  /* line 14, scss/partials/_recreation.scss */
+  /* line 20, scss/partials/_recreation.scss */
   .l_50_text {
     float: none;
     margin: 3.0em 2.0em;
   }
 }
 
-/* line 18, scss/partials/_recreation.scss */
+/* line 24, scss/partials/_recreation.scss */
 .old_mill_50 {
   margin: 0px;
   width: 100%;
@@ -705,13 +722,13 @@ div.el1.x-section.head_email_form h2 {
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 18, scss/partials/_recreation.scss */
+  /* line 24, scss/partials/_recreation.scss */
   .old_mill_50 {
     opacity: 1;
   }
 }
 
-/* line 23, scss/partials/_recreation.scss */
+/* line 29, scss/partials/_recreation.scss */
 .downtown_50 {
   margin: 0px;
   width: 100%;
@@ -725,13 +742,13 @@ div.el1.x-section.head_email_form h2 {
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 23, scss/partials/_recreation.scss */
+  /* line 29, scss/partials/_recreation.scss */
   .downtown_50 {
     opacity: 1;
   }
 }
 
-/* line 28, scss/partials/_recreation.scss */
+/* line 34, scss/partials/_recreation.scss */
 .mountainbike_50 {
   margin: 0px;
   width: 100%;
@@ -745,13 +762,13 @@ div.el1.x-section.head_email_form h2 {
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 28, scss/partials/_recreation.scss */
+  /* line 34, scss/partials/_recreation.scss */
   .mountainbike_50 {
     opacity: 1;
   }
 }
 
-/* line 33, scss/partials/_recreation.scss */
+/* line 39, scss/partials/_recreation.scss */
 .hiking_50 {
   margin: 0px;
   width: 100%;
@@ -765,13 +782,13 @@ div.el1.x-section.head_email_form h2 {
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 33, scss/partials/_recreation.scss */
+  /* line 39, scss/partials/_recreation.scss */
   .hiking_50 {
     opacity: 1;
   }
 }
 
-/* line 38, scss/partials/_recreation.scss */
+/* line 44, scss/partials/_recreation.scss */
 .skiing_50 {
   margin: 0px;
   width: 100%;
@@ -785,13 +802,13 @@ div.el1.x-section.head_email_form h2 {
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 38, scss/partials/_recreation.scss */
+  /* line 44, scss/partials/_recreation.scss */
   .skiing_50 {
     opacity: 1;
   }
 }
 
-/* line 43, scss/partials/_recreation.scss */
+/* line 49, scss/partials/_recreation.scss */
 .fishing_50 {
   margin: 0px;
   width: 100%;
@@ -805,13 +822,13 @@ div.el1.x-section.head_email_form h2 {
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 43, scss/partials/_recreation.scss */
+  /* line 49, scss/partials/_recreation.scss */
   .fishing_50 {
     opacity: 1;
   }
 }
 
-/* line 48, scss/partials/_recreation.scss */
+/* line 54, scss/partials/_recreation.scss */
 .golfing_50 {
   margin: 0px;
   width: 100%;
@@ -825,31 +842,37 @@ div.el1.x-section.head_email_form h2 {
   opacity: 0;
 }
 @media all and (max-width: 900px) {
-  /* line 48, scss/partials/_recreation.scss */
+  /* line 54, scss/partials/_recreation.scss */
   .golfing_50 {
     opacity: 1;
   }
 }
 
-/* line 53, scss/partials/_recreation.scss */
+/* line 59, scss/partials/_recreation.scss */
 .vt_cta {
   background-color: #e9e6d7 !important;
   position: relative;
 }
-/* line 57, scss/partials/_recreation.scss */
+@media all and (max-width: 500px) {
+  /* line 59, scss/partials/_recreation.scss */
+  .vt_cta {
+    padding-top: 0 !important;
+  }
+}
+/* line 66, scss/partials/_recreation.scss */
 .vt_cta .x-container.width {
   width: 100%;
 }
-/* line 60, scss/partials/_recreation.scss */
+/* line 69, scss/partials/_recreation.scss */
 .vt_cta .x-column {
   padding: 0 !important;
 }
-/* line 63, scss/partials/_recreation.scss */
+/* line 72, scss/partials/_recreation.scss */
 .vt_cta .x-2-3 {
   margin-right: 0;
   padding: 0 !important;
 }
-/* line 67, scss/partials/_recreation.scss */
+/* line 76, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 {
   position: absolute;
   top: 50%;
@@ -857,19 +880,26 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   text-align: center;
 }
-/* line 73, scss/partials/_recreation.scss */
+/* line 82, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 h2 {
   font-family: 'Playfair Display', serif;
   font-size: 4.15em;
   color: #4d4d4f;
+  margin: 0 0 0.2em;
 }
 @media all and (max-width: 900px) {
-  /* line 73, scss/partials/_recreation.scss */
+  /* line 82, scss/partials/_recreation.scss */
   .vt_cta .vt_col_1 h2 {
     font-size: 2.0em;
   }
 }
-/* line 81, scss/partials/_recreation.scss */
+@media all and (max-width: 500px) {
+  /* line 82, scss/partials/_recreation.scss */
+  .vt_cta .vt_col_1 h2 {
+    margin: 0.5em 0 0.2em;
+  }
+}
+/* line 94, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 a {
   display: block;
   background-color: #849b61;
@@ -885,17 +915,17 @@ div.el1.x-section.head_email_form h2 {
   -o-transition: background-color .3s linear;
   transition: background-color .3s linear;
 }
-/* line 95, scss/partials/_recreation.scss */
+/* line 108, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 a:hover {
   background-color: #658239;
 }
-/* line 100, scss/partials/_recreation.scss */
+/* line 113, scss/partials/_recreation.scss */
 .vt_cta .cta_vt {
   text-align: center;
   display: block;
   min-height: 200px;
 }
-/* line 105, scss/partials/_recreation.scss */
+/* line 118, scss/partials/_recreation.scss */
 .vt_cta .x-image img {
   width: 100%;
 }
@@ -1025,15 +1055,16 @@ div.el1.x-section.head_email_form h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
+  margin: 0.5em 0 0.2em;
 }
-/* line 57, scss/partials/_mixins.scss */
+/* line 58, scss/partials/_mixins.scss */
 .r_50_text_sm ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 62, scss/partials/_mixins.scss */
+/* line 63, scss/partials/_mixins.scss */
 .r_50_text_sm ul li:last-child {
   font-weight: 600;
 }
@@ -1053,27 +1084,27 @@ div.el1.x-section.head_email_form h2 {
   margin: 3.0em 6.0em;
   max-width: 768px;
 }
-/* line 78, scss/partials/_mixins.scss */
+/* line 79, scss/partials/_mixins.scss */
 .l_50_text_sm p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 2.0;
   color: #000;
 }
-/* line 84, scss/partials/_mixins.scss */
+/* line 85, scss/partials/_mixins.scss */
 .l_50_text_sm h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 90, scss/partials/_mixins.scss */
+/* line 91, scss/partials/_mixins.scss */
 .l_50_text_sm ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 95, scss/partials/_mixins.scss */
+/* line 96, scss/partials/_mixins.scss */
 .l_50_text_sm ul li:last-child {
   font-weight: 600;
 }
@@ -1173,27 +1204,27 @@ a.more:before {
   max-width: 800px;
   margin: 5em 8em 10em 11em !important;
 }
-/* line 78, scss/partials/_mixins.scss */
+/* line 79, scss/partials/_mixins.scss */
 .working_row .l_50_text p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 2.0;
   color: #000;
 }
-/* line 84, scss/partials/_mixins.scss */
+/* line 85, scss/partials/_mixins.scss */
 .working_row .l_50_text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 90, scss/partials/_mixins.scss */
+/* line 91, scss/partials/_mixins.scss */
 .working_row .l_50_text ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 95, scss/partials/_mixins.scss */
+/* line 96, scss/partials/_mixins.scss */
 .working_row .l_50_text ul li:last-child {
   font-weight: 600;
 }
@@ -1239,27 +1270,27 @@ a.more:before {
   max-width: 800px;
   margin: 5em 8em 10em 11em !important;
 }
-/* line 78, scss/partials/_mixins.scss */
+/* line 79, scss/partials/_mixins.scss */
 .schools_row .l_50_text p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 2.0;
   color: #000;
 }
-/* line 84, scss/partials/_mixins.scss */
+/* line 85, scss/partials/_mixins.scss */
 .schools_row .l_50_text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 90, scss/partials/_mixins.scss */
+/* line 91, scss/partials/_mixins.scss */
 .schools_row .l_50_text ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 95, scss/partials/_mixins.scss */
+/* line 96, scss/partials/_mixins.scss */
 .schools_row .l_50_text ul li:last-child {
   font-weight: 600;
 }
@@ -1509,6 +1540,10 @@ a.more:before {
   line-height: 1.75;
   color: #000;
 }
+/* line 8, scss/partials/_franklin_bros.scss */
+.neighborhood_content ul {
+  margin: 0 0 1.5em 0 !important;
+}
 /* line 11, scss/partials/_franklin_bros.scss */
 .neighborhood_content a {
   width: 100%;
@@ -1545,12 +1580,19 @@ a.more:before {
   width: 25%;
   height: auto;
 }
+@media all and (max-width: 400px) {
+  /* line 35, scss/partials/_franklin_bros.scss */
+  .neighborhood_content .neighborhood_links .menu_image img {
+    display: block;
+    margin: 0 auto 1.5em;
+  }
+}
 
-/* line 43, scss/partials/_franklin_bros.scss */
+/* line 47, scss/partials/_franklin_bros.scss */
 .franklin_intro {
   background-color: #e9e6d7 !important;
 }
-/* line 45, scss/partials/_franklin_bros.scss */
+/* line 49, scss/partials/_franklin_bros.scss */
 .franklin_intro div.sc_top_row {
   max-width: 1400px !important;
 }

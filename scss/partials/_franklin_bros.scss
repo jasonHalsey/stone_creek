@@ -5,8 +5,8 @@
       line-height:1.75;
       color: $true_blk;
 	}
-	li{
-
+	ul{
+		margin: 0 0 1.5em 0!important;
 	}
 	a{
 		width: 100%;
@@ -35,6 +35,10 @@
 			img{
 				width:25%;
 				height:auto;
+				@media all and (max-width: 400px) {
+					display: block;
+					margin: 0 auto 1.5em;
+				}
 			}
 		}
 	}

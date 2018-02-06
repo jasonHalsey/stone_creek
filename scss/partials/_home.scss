@@ -11,19 +11,22 @@ header{
 		img{
 			max-width: 357px;
 			@media all and (max-width: 400px) {
-				max-width: 320px;
+				max-width: 250px;
 			}
 		}
 		
 	}
 	.x-brand{
 		margin-top: 13px;
+		@media all and (max-width: 400px) {
+			margin-top: 22px;
+		}
 	}
 	.x-btn-navbar {
 	    margin-top: 20px;
 	    margin-bottom: 20px;
 	    @media all and (max-width: 500px) {
-	    	margin-top: 0px;
+	    	margin-top: 20px;
 	    }
 	}
 }

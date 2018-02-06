@@ -10,6 +10,12 @@
 }
 .r_50_text{
 	@include r_50_text_mix;
+	@media all and (max-width: 500px) {
+		margin: 0.5em 2.0em;
+		h2{
+			margin-top:0em!important;
+		}
+	}
 }
 .l_50_text{
 	@include l_50_text_mix;
@@ -53,6 +59,9 @@
 .vt_cta{
 	background-color: $tan!important;
 	position:relative;
+	@media all and (max-width: 500px) {
+		padding-top:0!important;
+	}
 
 	.x-container.width{
 		width:100%;
@@ -74,8 +83,12 @@
 	  	font-family: 'Playfair Display', serif;
     	font-size: 4.15em;
     	color: $md_gray;
+    	margin: 0 0 0.2em;
     	@media all and (max-width: 900px) {
 			font-size: 2.0em;
+		}
+		@media all and (max-width: 500px) {
+			margin: 0.5em 0 0.2em;
 		}
 	  }
 	  a{
