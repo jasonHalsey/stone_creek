@@ -71,13 +71,15 @@ function wrap_cta() {
 }
 
 function cta_height() {
-	jQuery(".cta_vt").each(function() {
-		var vt_img = jQuery(".vt_image");
-		var vt_img_height = (vt_img).height();
-		jQuery(this).css({
-			"height": vt_img_height + "px"
+	if (Modernizr.mq('only screen and (min-width: 1200px)')) {
+		jQuery(".cta_vt").each(function() {
+			var vt_img = jQuery(".vt_image");
+			var vt_img_height = (vt_img).height();
+			jQuery(this).css({
+				"height": vt_img_height + "px"
+			});
 		});
-	});
+	};
 }
 
 

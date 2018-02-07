@@ -59,6 +59,28 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+/* line 41, scss/partials/_global.scss */
+.rev_slider {
+  height: 800px !important;
+}
+@media (max-width: 1000px) {
+  /* line 41, scss/partials/_global.scss */
+  .rev_slider {
+    max-height: 420px !important;
+  }
+}
+
+/* line 47, scss/partials/_global.scss */
+.rev_slider_wrapper {
+  height: 800px !important;
+}
+@media (max-width: 1000px) {
+  /* line 47, scss/partials/_global.scss */
+  .rev_slider_wrapper {
+    max-height: 420px !important;
+  }
+}
+
 /* line 1, scss/partials/_footer.scss */
 footer .x-container.max {
   max-width: 1950px;
@@ -284,7 +306,7 @@ header .x-container.max {
 header .x-container img {
   max-width: 357px;
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 500px) {
   /* line 11, scss/partials/_home.scss */
   header .x-container img {
     max-width: 250px;
@@ -294,7 +316,7 @@ header .x-container img {
 header .x-brand {
   margin-top: 13px;
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 450px) {
   /* line 19, scss/partials/_home.scss */
   header .x-brand {
     margin-top: 22px;
@@ -472,7 +494,6 @@ div.el1.x-section.head_email_form {
 div.el1.x-section.head_email_form h2 {
   font-family: 'Playfair Display', serif;
   font-size: 1.5em;
-  padding-top: 1.0em;
   width: 30%;
   float: left;
   font-weight: 400;
@@ -632,8 +653,9 @@ div.el1.x-section.head_email_form h2 {
   font-size: 1.6em;
   line-height: 1.75;
   color: #000;
+  font-weight: 300;
 }
-/* line 51, scss/partials/_mixins.scss */
+/* line 52, scss/partials/_mixins.scss */
 .r_50_text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
@@ -641,13 +663,17 @@ div.el1.x-section.head_email_form h2 {
   margin: 0.5em 0 0.2em;
 }
 /* line 58, scss/partials/_mixins.scss */
+.r_50_text ul {
+  font-weight: 300;
+}
+/* line 60, scss/partials/_mixins.scss */
 .r_50_text ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 63, scss/partials/_mixins.scss */
+/* line 65, scss/partials/_mixins.scss */
 .r_50_text ul li:last-child {
   font-weight: 600;
 }
@@ -676,27 +702,32 @@ div.el1.x-section.head_email_form h2 {
   float: left;
   margin: 3.0em 6.0em;
 }
-/* line 79, scss/partials/_mixins.scss */
+/* line 81, scss/partials/_mixins.scss */
 .l_50_text p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 2.0;
   color: #000;
+  font-weight: 300;
 }
-/* line 85, scss/partials/_mixins.scss */
+/* line 88, scss/partials/_mixins.scss */
 .l_50_text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 91, scss/partials/_mixins.scss */
+/* line 93, scss/partials/_mixins.scss */
+.l_50_text ul {
+  font-weight: 300;
+}
+/* line 95, scss/partials/_mixins.scss */
 .l_50_text ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 96, scss/partials/_mixins.scss */
+/* line 100, scss/partials/_mixins.scss */
 .l_50_text ul li:last-child {
   font-weight: 600;
 }
@@ -853,26 +884,32 @@ div.el1.x-section.head_email_form h2 {
   background-color: #e9e6d7 !important;
   position: relative;
 }
+/* line 19, scss/partials/_mixins.scss */
+.vt_cta:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 @media all and (max-width: 500px) {
   /* line 59, scss/partials/_recreation.scss */
   .vt_cta {
     padding-top: 0 !important;
   }
 }
-/* line 66, scss/partials/_recreation.scss */
+/* line 67, scss/partials/_recreation.scss */
 .vt_cta .x-container.width {
   width: 100%;
 }
-/* line 69, scss/partials/_recreation.scss */
+/* line 70, scss/partials/_recreation.scss */
 .vt_cta .x-column {
   padding: 0 !important;
 }
-/* line 72, scss/partials/_recreation.scss */
+/* line 73, scss/partials/_recreation.scss */
 .vt_cta .x-2-3 {
   margin-right: 0;
   padding: 0 !important;
 }
-/* line 76, scss/partials/_recreation.scss */
+/* line 77, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 {
   position: absolute;
   top: 50%;
@@ -880,7 +917,15 @@ div.el1.x-section.head_email_form h2 {
   width: 100%;
   text-align: center;
 }
-/* line 82, scss/partials/_recreation.scss */
+@media all and (max-width: 900px) {
+  /* line 77, scss/partials/_recreation.scss */
+  .vt_cta .vt_col_1 {
+    position: relative;
+    transform: none;
+    padding: 1em 1.5em o !important;
+  }
+}
+/* line 88, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 h2 {
   font-family: 'Playfair Display', serif;
   font-size: 4.15em;
@@ -888,18 +933,19 @@ div.el1.x-section.head_email_form h2 {
   margin: 0 0 0.2em;
 }
 @media all and (max-width: 900px) {
-  /* line 82, scss/partials/_recreation.scss */
+  /* line 88, scss/partials/_recreation.scss */
   .vt_cta .vt_col_1 h2 {
     font-size: 2.0em;
+    margin: 1.0em 0;
   }
 }
 @media all and (max-width: 500px) {
-  /* line 82, scss/partials/_recreation.scss */
+  /* line 88, scss/partials/_recreation.scss */
   .vt_cta .vt_col_1 h2 {
-    margin: 0.5em 0 0.2em;
+    margin: 1.0em 0;
   }
 }
-/* line 94, scss/partials/_recreation.scss */
+/* line 101, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 a {
   display: block;
   background-color: #849b61;
@@ -915,19 +961,25 @@ div.el1.x-section.head_email_form h2 {
   -o-transition: background-color .3s linear;
   transition: background-color .3s linear;
 }
-/* line 108, scss/partials/_recreation.scss */
+/* line 115, scss/partials/_recreation.scss */
 .vt_cta .vt_col_1 a:hover {
   background-color: #658239;
 }
-/* line 113, scss/partials/_recreation.scss */
+/* line 120, scss/partials/_recreation.scss */
 .vt_cta .cta_vt {
   text-align: center;
   display: block;
   min-height: 200px;
 }
-/* line 118, scss/partials/_recreation.scss */
+/* line 125, scss/partials/_recreation.scss */
 .vt_cta .x-image img {
   width: 100%;
+}
+@media all and (max-width: 900px) {
+  /* line 125, scss/partials/_recreation.scss */
+  .vt_cta .x-image img {
+    display: none;
+  }
 }
 
 /* line 1, scss/partials/_sc_homes.scss */
@@ -1042,6 +1094,7 @@ div.el1.x-section.head_email_form h2 {
   float: right;
   margin: 3.0em 6.0em;
   max-width: 768px;
+  margin: 3em 6em !important;
 }
 /* line 45, scss/partials/_mixins.scss */
 .r_50_text_sm p {
@@ -1049,8 +1102,9 @@ div.el1.x-section.head_email_form h2 {
   font-size: 1.6em;
   line-height: 1.75;
   color: #000;
+  font-weight: 300;
 }
-/* line 51, scss/partials/_mixins.scss */
+/* line 52, scss/partials/_mixins.scss */
 .r_50_text_sm h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
@@ -1058,13 +1112,17 @@ div.el1.x-section.head_email_form h2 {
   margin: 0.5em 0 0.2em;
 }
 /* line 58, scss/partials/_mixins.scss */
+.r_50_text_sm ul {
+  font-weight: 300;
+}
+/* line 60, scss/partials/_mixins.scss */
 .r_50_text_sm ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 63, scss/partials/_mixins.scss */
+/* line 65, scss/partials/_mixins.scss */
 .r_50_text_sm ul li:last-child {
   font-weight: 600;
 }
@@ -1075,48 +1133,71 @@ div.el1.x-section.head_email_form h2 {
     margin: 3.0em 2.0em;
   }
 }
+@media all and (max-width: 500px) {
+  /* line 28, scss/partials/_sc_homes.scss */
+  .r_50_text_sm {
+    margin: 2em 2em !important;
+  }
+}
 
-/* line 32, scss/partials/_sc_homes.scss */
+/* line 36, scss/partials/_sc_homes.scss */
 .l_50_text_sm {
   max-width: 970px;
   display: block;
   float: left;
   margin: 3.0em 6.0em;
   max-width: 768px;
+  margin: 3em 6em !important;
 }
-/* line 79, scss/partials/_mixins.scss */
+/* line 81, scss/partials/_mixins.scss */
 .l_50_text_sm p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 2.0;
   color: #000;
+  font-weight: 300;
 }
-/* line 85, scss/partials/_mixins.scss */
+/* line 88, scss/partials/_mixins.scss */
 .l_50_text_sm h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 91, scss/partials/_mixins.scss */
+/* line 93, scss/partials/_mixins.scss */
+.l_50_text_sm ul {
+  font-weight: 300;
+}
+/* line 95, scss/partials/_mixins.scss */
 .l_50_text_sm ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 96, scss/partials/_mixins.scss */
+/* line 100, scss/partials/_mixins.scss */
 .l_50_text_sm ul li:last-child {
   font-weight: 600;
 }
 @media all and (max-width: 900px) {
-  /* line 32, scss/partials/_sc_homes.scss */
+  /* line 36, scss/partials/_sc_homes.scss */
   .l_50_text_sm {
     float: none;
     margin: 3.0em 2.0em;
   }
 }
+@media all and (max-width: 500px) {
+  /* line 36, scss/partials/_sc_homes.scss */
+  .l_50_text_sm {
+    margin: 2em 2em !important;
+  }
+}
 
-/* line 36, scss/partials/_sc_homes.scss */
+/* line 45, scss/partials/_sc_homes.scss */
+.image_block_section .x-container.width {
+  width: 100% !important;
+}
+
+/* line 49, scss/partials/_sc_homes.scss */
 a.available {
   color: #000;
   display: block;
@@ -1127,12 +1208,15 @@ a.available {
   -webkit-transition: color .3s linear;
   -o-transition: color .3s linear;
   transition: color .3s linear;
+  margin-bottom: 1.0em;
+  width: 100%;
+  line-height: 1.6;
 }
-/* line 46, scss/partials/_sc_homes.scss */
+/* line 63, scss/partials/_sc_homes.scss */
 a.available:hover {
   color: #849b61;
 }
-/* line 49, scss/partials/_sc_homes.scss */
+/* line 66, scss/partials/_sc_homes.scss */
 a.available:before {
   content: "";
   float: left;
@@ -1142,7 +1226,7 @@ a.available:before {
   background: url(images/person2_icon.png);
 }
 @media all and (max-width: 900px) {
-  /* line 36, scss/partials/_sc_homes.scss */
+  /* line 49, scss/partials/_sc_homes.scss */
   a.available {
     font-size: 18px;
     width: 100%;
@@ -1150,7 +1234,7 @@ a.available:before {
   }
 }
 
-/* line 63, scss/partials/_sc_homes.scss */
+/* line 80, scss/partials/_sc_homes.scss */
 a.more {
   color: #000;
   display: block;
@@ -1161,12 +1245,15 @@ a.more {
   -webkit-transition: color .3s linear;
   -o-transition: color .3s linear;
   transition: color .3s linear;
+  margin-bottom: 1.0em;
+  width: 100%;
+  line-height: 1.6;
 }
-/* line 73, scss/partials/_sc_homes.scss */
+/* line 94, scss/partials/_sc_homes.scss */
 a.more:hover {
   color: #849b61;
 }
-/* line 76, scss/partials/_sc_homes.scss */
+/* line 97, scss/partials/_sc_homes.scss */
 a.more:before {
   content: "";
   float: left;
@@ -1176,12 +1263,20 @@ a.more:before {
   background: url(images/housing_icon.png);
 }
 @media all and (max-width: 900px) {
-  /* line 63, scss/partials/_sc_homes.scss */
+  /* line 80, scss/partials/_sc_homes.scss */
   a.more {
     font-size: 18px;
     width: 100%;
     height: 3.0em;
   }
+}
+
+/* line 112, scss/partials/_sc_homes.scss */
+.x-section .x-container.marginless-columns .x-column {
+  display: table-cell;
+  margin-right: 0;
+  float: none;
+  vertical-align: middle !important;
 }
 
 /* line 1, scss/partials/_living.scss */
@@ -1204,27 +1299,32 @@ a.more:before {
   max-width: 800px;
   margin: 5em 8em 10em 11em !important;
 }
-/* line 79, scss/partials/_mixins.scss */
+/* line 81, scss/partials/_mixins.scss */
 .working_row .l_50_text p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 2.0;
   color: #000;
+  font-weight: 300;
 }
-/* line 85, scss/partials/_mixins.scss */
+/* line 88, scss/partials/_mixins.scss */
 .working_row .l_50_text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 91, scss/partials/_mixins.scss */
+/* line 93, scss/partials/_mixins.scss */
+.working_row .l_50_text ul {
+  font-weight: 300;
+}
+/* line 95, scss/partials/_mixins.scss */
 .working_row .l_50_text ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 96, scss/partials/_mixins.scss */
+/* line 100, scss/partials/_mixins.scss */
 .working_row .l_50_text ul li:last-child {
   font-weight: 600;
 }
@@ -1270,27 +1370,32 @@ a.more:before {
   max-width: 800px;
   margin: 5em 8em 10em 11em !important;
 }
-/* line 79, scss/partials/_mixins.scss */
+/* line 81, scss/partials/_mixins.scss */
 .schools_row .l_50_text p {
   font-family: 'Lato', sans-serif;
   font-size: 1.6em;
   line-height: 2.0;
   color: #000;
+  font-weight: 300;
 }
-/* line 85, scss/partials/_mixins.scss */
+/* line 88, scss/partials/_mixins.scss */
 .schools_row .l_50_text h2 {
   font-family: 'Playfair Display', serif;
   font-size: 3.15em;
   color: #658239;
 }
-/* line 91, scss/partials/_mixins.scss */
+/* line 93, scss/partials/_mixins.scss */
+.schools_row .l_50_text ul {
+  font-weight: 300;
+}
+/* line 95, scss/partials/_mixins.scss */
 .schools_row .l_50_text ul li {
   font-size: 1.6em;
   font-family: 'Lato', sans-serif;
   color: #000;
   margin-bottom: 0.75em;
 }
-/* line 96, scss/partials/_mixins.scss */
+/* line 100, scss/partials/_mixins.scss */
 .schools_row .l_50_text ul li:last-child {
   font-weight: 600;
 }

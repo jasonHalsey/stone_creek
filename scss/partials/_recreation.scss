@@ -59,6 +59,7 @@
 .vt_cta{
 	background-color: $tan!important;
 	position:relative;
+	@include clearfix;
 	@media all and (max-width: 500px) {
 		padding-top:0!important;
 	}
@@ -79,6 +80,11 @@
 	  transform: translateY(-50%);
 	  width:100%;
 	  text-align: center;
+	  @media all and (max-width: 900px) {
+	  	position: relative;
+	  	transform: none;
+	  	padding: 1.0em 1.5em o!important;
+	  }
 	  h2{
 	  	font-family: 'Playfair Display', serif;
     	font-size: 4.15em;
@@ -86,9 +92,10 @@
     	margin: 0 0 0.2em;
     	@media all and (max-width: 900px) {
 			font-size: 2.0em;
+			margin:1.0em 0;
 		}
 		@media all and (max-width: 500px) {
-			margin: 0.5em 0 0.2em;
+			margin: 1.0em 0;
 		}
 	  }
 	  a{
@@ -117,5 +124,8 @@
 	}
 	.x-image img{		
 		width:100%;
+		@media all and (max-width: 900px) {
+			display:none;
+		}
 	}
 }
