@@ -116,3 +116,25 @@ a.more{
     vertical-align: middle!important;
 }
 
+.img_50{
+	.rev_slider{
+		height: 800px!important;
+		@media (max-width: 1000px){
+			max-height: 420px!important
+		}
+	}
+	.rev_slider_wrapper{
+		height: 800px!important;
+		@media (max-width: 1000px){
+			max-height: 420px!important
+		}
+	}
+}
+.mobile_slide{
+	.rev_slider{
+		max-height: 420px!important
+	}
+	.rev_slider_wrapper{
+		max-height: 420px!important
+	}
+}

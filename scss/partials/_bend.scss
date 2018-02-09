@@ -26,3 +26,10 @@
 	@include img_half;
 	background-image: url('images/TowerTheater_Pg8.jpg');
 }
+
+.img_bloc{
+	img{
+		width:100%;
+		height:auto;
+	}
+}
